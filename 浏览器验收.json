@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-30",
+  "browser": "Ego Lite (isolated task space)",
+  "functional": [
+    {
+      "name": "literal exact-keyword iron-death",
+      "hits": 303,
+      "passed": true
+    },
+    {
+      "name": "invalid query shows error and retains labelled last valid result",
+      "passed": true,
+      "error": "运算符后缺少话题。 以下保留上一次有效分析结果；请修正后重新分析。"
+    },
+    {
+      "name": "zero-match state",
+      "passed": true
+    },
+    {
+      "name": "invalid month range",
+      "passed": true
+    },
+    {
+      "name": "missing-period journal does not produce fake zero trend",
+      "passed": true,
+      "note": "完整刊期比较集：0 本期刊。"
+    },
+    {
+      "name": "method and lexicon dialog",
+      "passed": true
+    }
+  ],
+  "downloads": {
+    "paper_csv_rows": 14,
+    "matrix_evidence_csv_rows": 1,
+    "all_keyword_csv_rows": 49,
+    "snapshot_ids_match_csv": true,
+    "svg_valid_xml_with_provenance": true
+  },
+  "matrix_drill_down": {
+    "query": "铁死亡 AND 糖尿病肾病",
+    "all_hits": 14,
+    "pair": [
+      "糖尿病肾病",
+      "网络药理学"
+    ],
+    "matrix_cell_count": 1,
+    "displayed_evidence_count": 1,
+    "exported_evidence_rows": 1,
+    "passed": true
+  },
+  "mobile": {
+    "viewport": 390,
+    "scrollWidth": 390,
+    "matrixTextBounds": []
+  },
+  "offline": {
+    "name": "standalone file opens and searches while browser network is offline",
+    "passed": true,
+    "hits": 14,
+    "resourceRequests": []
+  },
+  "limitations": [
+    "Safari and Firefox not tested",
+    "No physical mobile device test"
+  ],
+  "passed": true
+}

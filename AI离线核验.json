@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "tests": 12,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "test_aggregate_matches_saved_engine_snapshot",
+    "test_analysis_sampling_and_truncation_are_explicit",
+    "test_api_key_not_in_shipped_source_or_html",
+    "test_empty_query_cannot_refine_entire_corpus",
+    "test_exact_14_corpus_records",
+    "test_fabricated_references_are_removed",
+    "test_json_fences_and_incomplete_responses",
+    "test_literal_quote_and_missing_document_handling",
+    "test_plan_has_no_paper_text",
+    "test_refine_batches_do_not_skip_or_duplicate",
+    "test_unknown_ids_and_mismatched_filters_are_rejected",
+    "test_unverifiable_relevance_quote_is_downgraded"
+  ]
+}

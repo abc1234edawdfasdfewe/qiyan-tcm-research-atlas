@@ -1,0 +1,10 @@
+* text=auto
+*.gz binary
+*.png binary
+*.csv -text
+# Preserve source snapshots byte-for-byte across platforms for SHA-256 checks
+datasets/** -text
+*.command text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf

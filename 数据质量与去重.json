@@ -1,0 +1,362 @@
+{
+  "meta": {
+    "title": "中医药热点计量工作台",
+    "scope": "2025-11 至 2026-10 刊期",
+    "snapshot": "2026-10-29 corpus",
+    "records": 21709,
+    "journals": 67,
+    "with_abstract": 20865,
+    "with_keywords": 20882,
+    "duplicate_records": 23,
+    "complete_journals": 43,
+    "missing_periods": 37,
+    "lexicon_version": "2026-10-30.seed-v1",
+    "corpus_sha256": "e28129bf6bbbe4e806f741f57d5f2744494ad88d0b1ce14e2e50d15e87f635cc",
+    "references_available": false,
+    "citations_available": false,
+    "periods": [
+      "2025-11",
+      "2025-12",
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "note": "月份按出版周期与期号折算；实体分类为术语提及；共现不代表因果或证据质量。"
+  },
+  "duplicate_audit": [
+    {
+      "type": "same_doi_conflicting_titles",
+      "doi": "10.13863/j.issn1001-4454.2026.01.009",
+      "members": [
+        {
+          "id": "ZYCA202601009",
+          "title": "绵阳市中部三县市药用植物资源调查与分析"
+        },
+        {
+          "id": "ZYCA20260128009",
+          "title": "绵阳市药用植物资源调查与分析"
+        }
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.260150",
+      "keep": "ZYXB202607019",
+      "members": [
+        "ZYXB2026070100J",
+        "ZYXB202607019"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250263",
+      "keep": "ZYXB202512020",
+      "members": [
+        "ZYXB2025121100K",
+        "ZYXB202512020"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250222",
+      "keep": "ZYXB202511001",
+      "members": [
+        "ZYXB202511001",
+        "ZYXB20251114002"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250223",
+      "keep": "ZYXB202511002",
+      "members": [
+        "ZYXB202511002",
+        "ZYXB20251114003"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250224",
+      "keep": "ZYXB202511003",
+      "members": [
+        "ZYXB202511003",
+        "ZYXB20251114004"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250225",
+      "keep": "ZYXB202511004",
+      "members": [
+        "ZYXB202511004",
+        "ZYXB20251114005"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250226",
+      "keep": "ZYXB202511005",
+      "members": [
+        "ZYXB202511005",
+        "ZYXB20251114006"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250227",
+      "keep": "ZYXB202511006",
+      "members": [
+        "ZYXB202511006",
+        "ZYXB20251114007"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250228",
+      "keep": "ZYXB202511007",
+      "members": [
+        "ZYXB202511007",
+        "ZYXB20251114008"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250229",
+      "keep": "ZYXB202511008",
+      "members": [
+        "ZYXB202511008",
+        "ZYXB20251114009"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250231",
+      "keep": "ZYXB202511010",
+      "members": [
+        "ZYXB202511010",
+        "ZYXB2025111400B"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250232",
+      "keep": "ZYXB202511011",
+      "members": [
+        "ZYXB202511011",
+        "ZYXB2025111400C"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250233",
+      "keep": "ZYXB202511012",
+      "members": [
+        "ZYXB202511012",
+        "ZYXB2025111400D"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250234",
+      "keep": "ZYXB202511013",
+      "members": [
+        "ZYXB202511013",
+        "ZYXB2025111400E"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250235",
+      "keep": "ZYXB202511014",
+      "members": [
+        "ZYXB202511014",
+        "ZYXB2025111400F"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250236",
+      "keep": "ZYXB202511015",
+      "members": [
+        "ZYXB202511015",
+        "ZYXB2025111400G"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250237",
+      "keep": "ZYXB202511016",
+      "members": [
+        "ZYXB202511016",
+        "ZYXB2025111400H"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250238",
+      "keep": "ZYXB202511017",
+      "members": [
+        "ZYXB202511017",
+        "ZYXB2025111400I"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250239",
+      "keep": "ZYXB202511018",
+      "members": [
+        "ZYXB202511018",
+        "ZYXB2025111400J"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250240",
+      "keep": "ZYXB202511019",
+      "members": [
+        "ZYXB202511019",
+        "ZYXB2025111400K"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250241",
+      "keep": "ZYXB202511020",
+      "members": [
+        "ZYXB202511020",
+        "ZYXB2025111400L"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250242",
+      "keep": "ZYXB202511021",
+      "members": [
+        "ZYXB202511021",
+        "ZYXB2025111400M"
+      ]
+    },
+    {
+      "type": "same_doi_and_title",
+      "doi": "10.19664/j.cnki.1002-2392.250243",
+      "keep": "ZYXB202511022",
+      "members": [
+        "ZYXB202511022",
+        "ZYXB2025111400N"
+      ]
+    }
+  ],
+  "suspicious_titles": [
+    {
+      "id": "REST202512043",
+      "title": "《广州中医药大学学报》入选中国科技核心期刊证书"
+    },
+    {
+      "id": "SHZZ202512002",
+      "title": "创刊70周年国医大师贺词集锦"
+    },
+    {
+      "id": "BHON202601023",
+      "title": "《浙江中医药大学学报》编委会成员名单"
+    },
+    {
+      "id": "BHON202601021",
+      "title": "2026年《浙江中医药大学学报》可直接使用的英文缩略语"
+    },
+    {
+      "id": "ZJLC202609019",
+      "title": "中国科技核心期刊(中国科技论文统计源期刊)收录证书"
+    },
+    {
+      "id": "ZJLC202608020",
+      "title": "证书"
+    },
+    {
+      "id": "ZJLC202606020",
+      "title": "证书"
+    },
+    {
+      "id": "ZJLC202605020",
+      "title": "证书"
+    },
+    {
+      "id": "ZJLC202603021",
+      "title": "证书"
+    },
+    {
+      "id": "ZJLC202602022",
+      "title": "证书"
+    },
+    {
+      "id": "ZJLC202601022",
+      "title": "证书"
+    },
+    {
+      "id": "ZJLC202512019",
+      "title": "证书"
+    },
+    {
+      "id": "ZJLC202511022",
+      "title": "证书"
+    },
+    {
+      "id": "ZGZE202610029",
+      "title": "编辑部在售杂志明细"
+    },
+    {
+      "id": "ZGZE202609029",
+      "title": "编辑部在售杂志明细"
+    },
+    {
+      "id": "ZGZE202608012",
+      "title": "编辑部在售杂志明细"
+    },
+    {
+      "id": "ZGZE202607029",
+      "title": "编辑部在售杂志明细"
+    },
+    {
+      "id": "ZGZE202606015",
+      "title": "编辑部在售杂志明细"
+    },
+    {
+      "id": "ZGZE202605006",
+      "title": "编辑部在售杂志明细"
+    },
+    {
+      "id": "ZGZE202604028",
+      "title": "编辑部在售杂志明细"
+    },
+    {
+      "id": "ZGZE202603029",
+      "title": "编辑部在售杂志明细"
+    },
+    {
+      "id": "ZGZE202602027",
+      "title": "编辑部在售杂志明细"
+    },
+    {
+      "id": "ZGZE202601023",
+      "title": "编辑部在售杂志明细"
+    },
+    {
+      "id": "ZGZE202512030",
+      "title": "编辑部在售杂志明细"
+    },
+    {
+      "id": "ZGZE202511032",
+      "title": "编辑部在售杂志明细"
+    },
+    {
+      "id": "ZYXY202610021",
+      "title": "《中药新药与临床药理》入选2023年版“中文核心期刊”证书"
+    }
+  ]
+}

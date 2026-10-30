@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "stopped_before_restart": true,
+  "new_session_issued": true,
+  "keychain_restored": true,
+  "independent_background_process": true,
+  "model": "gemini-4-argon-high"
+}

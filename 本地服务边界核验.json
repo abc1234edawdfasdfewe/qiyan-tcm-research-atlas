@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "status responds with configured model and never returns API key",
+      "passed": true
+    },
+    {
+      "name": "foreign origin cannot read status/session",
+      "passed": true
+    },
+    {
+      "name": "foreign Host is rejected",
+      "passed": true
+    },
+    {
+      "name": "POST requires local session token",
+      "passed": true
+    },
+    {
+      "name": "file or opaque origins cannot call model",
+      "passed": true
+    },
+    {
+      "name": "simple cross-site form types are not accepted",
+      "passed": true
+    },
+    {
+      "name": "oversized requests are rejected before parsing",
+      "passed": true
+    },
+    {
+      "name": "server does not expose arbitrary files or directory listings",
+      "passed": true
+    },
+    {
+      "name": "CORS preflight is denied",
+      "passed": true
+    }
+  ],
+  "provider_calls": 0
+}

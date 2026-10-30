@@ -1,0 +1,105 @@
+{
+  "journal_count": 67,
+  "scope_months": [
+    "2025-11",
+    "2026-10"
+  ],
+  "main": {
+    "records": 21709,
+    "matched": 21709,
+    "abstract": 20865,
+    "keywords": 20882,
+    "affiliations": 21280,
+    "clc_code": 21480,
+    "fund": 220,
+    "title_en": 186,
+    "abstract_en": 186,
+    "keywords_en": 186,
+    "abstract_status": {
+      "present": 20865,
+      "body_excerpt_not_abstract": 811,
+      "source_placeholder": 33
+    },
+    "summary_kind": {
+      "abstract": 20865,
+      "body_excerpt": 811,
+      "source_placeholder": 33
+    },
+    "keyword_status": {
+      "present": 20882,
+      "returned_empty": 827
+    }
+  },
+  "early": {
+    "records": 18,
+    "matched": 18,
+    "abstract": 18,
+    "keywords": 18,
+    "affiliations": 18,
+    "clc_code": 0,
+    "fund": 18,
+    "title_en": 15,
+    "abstract_en": 15,
+    "keywords_en": 15,
+    "abstract_status": {
+      "present": 18
+    },
+    "summary_kind": {
+      "abstract": 18
+    },
+    "keyword_status": {
+      "present": 18
+    }
+  },
+  "supplement": {
+    "records": 73,
+    "matched": 73,
+    "abstract": 73,
+    "keywords": 73,
+    "affiliations": 73,
+    "clc_code": 73,
+    "fund": 0,
+    "title_en": 0,
+    "abstract_en": 0,
+    "keywords_en": 0,
+    "abstract_status": {
+      "present": 73
+    },
+    "summary_kind": {
+      "abstract": 73
+    },
+    "keyword_status": {
+      "present": 73
+    }
+  },
+  "all_scopes": {
+    "records": 21800,
+    "matched": 21800,
+    "abstract": 20956,
+    "keywords": 20973,
+    "affiliations": 21371,
+    "clc_code": 21553,
+    "fund": 238,
+    "title_en": 201,
+    "abstract_en": 201,
+    "keywords_en": 201,
+    "abstract_status": {
+      "present": 20956,
+      "body_excerpt_not_abstract": 811,
+      "source_placeholder": 33
+    },
+    "summary_kind": {
+      "abstract": 20956,
+      "body_excerpt": 811,
+      "source_placeholder": 33
+    },
+    "keyword_status": {
+      "present": 20973,
+      "returned_empty": 827
+    }
+  },
+  "detail_sources": {
+    "CNKI API": 21553,
+    "publisher_public_front_metadata": 247
+  }
+}

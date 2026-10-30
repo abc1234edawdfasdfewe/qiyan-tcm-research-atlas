@@ -1,0 +1,156 @@
+{
+  "snapshot": "2026-10-29",
+  "scope": "2025-11 through 2026-10 issue window",
+  "records": {
+    "main": 21709,
+    "early": 18,
+    "supplement": 73
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2573,
+      "sha256": "fcccacfb6380e91169429f209a133ad460d00707d753aa1c1c25c729770a3802"
+    },
+    {
+      "path": "catalogue/全部已出版目录.csv",
+      "bytes": 8451831,
+      "sha256": "28ffa747e672af9e8eb7f52eff7ad4f79479f0c39aae8e1b0a474735fed2775a"
+    },
+    {
+      "path": "catalogue/刊名映射.json",
+      "bytes": 7202,
+      "sha256": "02a4293216083d85f22150823f81ca5cc5af0a55417d7cde2fd438bee467b32f"
+    },
+    {
+      "path": "catalogue/原始刊名清单.txt",
+      "bytes": 1901,
+      "sha256": "1969e4e5f7ed2883c69faa240c8b49cdc953636810c777ed6befee8e00f3f289"
+    },
+    {
+      "path": "catalogue/原始清单去重映射.csv",
+      "bytes": 4744,
+      "sha256": "590c855670d48f05f866d8dee10b7af467dc398a4d60bb41a61b4150f5feb986"
+    },
+    {
+      "path": "catalogue/增刊_月份未核验.csv",
+      "bytes": 31440,
+      "sha256": "6589d9595805a77eec8e105d500595a19ce1515155595ee503c247353067ea4f"
+    },
+    {
+      "path": "catalogue/官网补采/202511.json",
+      "bytes": 11824,
+      "sha256": "499d6c2b8f0312fa71cbf79b1dc0e26de6bdc1f57983188da4dd18b7b86f6cbc"
+    },
+    {
+      "path": "catalogue/官网补采/202512.json",
+      "bytes": 11824,
+      "sha256": "fd4d0b2fa8956cff61a39822dec01a83b6144439e9fc5a99e0264ca1a80f4739"
+    },
+    {
+      "path": "catalogue/官网补采/202601.json",
+      "bytes": 9915,
+      "sha256": "653f1d28abc81ef3a6c4cf728c66d2234c9b1c21d20a876e6eaae8d80bfe54e1"
+    },
+    {
+      "path": "catalogue/官网补采/202602.json",
+      "bytes": 9387,
+      "sha256": "d2320264bd6966597c8af31b33846b6a6d587dd432eb4ddf2231d24f244c0585"
+    },
+    {
+      "path": "catalogue/官网补采/202603.json",
+      "bytes": 9293,
+      "sha256": "abbe23c31ef902150b6eed7ea20f4e88aa9039c175a3e6268682a8e3ddaea7b1"
+    },
+    {
+      "path": "catalogue/官网补采/202604.json",
+      "bytes": 9502,
+      "sha256": "32acb7597fd39df8825915cce18931beb125b6134a86c7f6fa765dcb1d2fd65c"
+    },
+    {
+      "path": "catalogue/官网补采/202605.json",
+      "bytes": 9835,
+      "sha256": "c97cbe7868828c60448a334f20579aad2f936ff09a6a2fd3c08da3fa12ff77bf"
+    },
+    {
+      "path": "catalogue/官网补采/202606.json",
+      "bytes": 9589,
+      "sha256": "2b0d16d9cd24079ce1c069044682e227c4a764778e8d0b98e9ad8cdeef5c25ba"
+    },
+    {
+      "path": "catalogue/官网补采/202607.json",
+      "bytes": 9586,
+      "sha256": "3db550738dffec8b06451ddd10a664089b9588af4bc88a1a843ff756b3c80624"
+    },
+    {
+      "path": "catalogue/官网补采/202608.json",
+      "bytes": 9791,
+      "sha256": "8ea1ee177dfd214a8ddbdc5255d771138147b79435e06023e9bade66638008db"
+    },
+    {
+      "path": "catalogue/官网补采/202609.json",
+      "bytes": 8756,
+      "sha256": "fcd4d1d2a2c6bb651180a9cca3f4ce7525efee732bf1c74e9f7080993a0184fe"
+    },
+    {
+      "path": "catalogue/官网补采/202610.json",
+      "bytes": 8946,
+      "sha256": "04df09ca60571b7e331a2ca54fc5f341f3f7bfe7ed975d98eb3bc11dc731cd74"
+    },
+    {
+      "path": "catalogue/提前上线目录.csv",
+      "bytes": 7747,
+      "sha256": "170b8690641b9ade8763bb2c0a023d0e5d7097c6a70131be78da4cc8866ffc0f"
+    },
+    {
+      "path": "catalogue/最终数据核验.json",
+      "bytes": 307,
+      "sha256": "1a9d515bb4a95936ded01a6c114c4b53b819fce4efd466375fa8555b10e36678"
+    },
+    {
+      "path": "catalogue/结果摘要.json",
+      "bytes": 511,
+      "sha256": "cab3662a4e0171a21651c384b09501c4f9718bef6ad3e0a0fcb804e89834a33b"
+    },
+    {
+      "path": "catalogue/逐期覆盖状态.json",
+      "bytes": 255100,
+      "sha256": "d608191cd05c8192b9b2ec24c27f10edd38d10a5c17d5d6c3f717515ca44727c"
+    },
+    {
+      "path": "catalogue/采集覆盖情况.csv",
+      "bytes": 6693,
+      "sha256": "f743b12b86d9229450504644f75cf4260559c6ab3c29cabfccda1b902d0840b8"
+    },
+    {
+      "path": "catalogue/采集计划.json",
+      "bytes": 484185,
+      "sha256": "5c51e69d583702df1f75575d82d2653e46e607553aebe6e76c3245be86b2d58d"
+    },
+    {
+      "path": "enriched/全部文献详情.json.gz",
+      "bytes": 16065210,
+      "sha256": "e28129bf6bbbe4e806f741f57d5f2744494ad88d0b1ce14e2e50d15e87f635cc"
+    },
+    {
+      "path": "enriched/各刊字段覆盖情况.csv",
+      "bytes": 4245,
+      "sha256": "f88ddc181caea5f9738424198232f0e1d3c871244dd506bf17b46b8c6827537d"
+    },
+    {
+      "path": "enriched/字段缺失清单.csv",
+      "bytes": 133416,
+      "sha256": "04d082b4c60af6768ac626b4678d9c3f8fe9e4e794cb728d4d7720c0bb02ab1a"
+    },
+    {
+      "path": "enriched/最终校验.json",
+      "bytes": 470,
+      "sha256": "6bc726f386b834cfee66f8d9e7b8ccdf4dbc05999a82557da113591df1089154"
+    },
+    {
+      "path": "enriched/结果摘要.json",
+      "bytes": 2054,
+      "sha256": "9ad1049a5b4fb3dd7cac59837357e6b5baaf1485c8585cd509034e1e08e5aef1"
+    }
+  ]
+}

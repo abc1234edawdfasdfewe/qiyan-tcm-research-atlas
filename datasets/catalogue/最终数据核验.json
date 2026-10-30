@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "main_csv_rows": 21709,
+  "main_unique_ids": 21709,
+  "journal_count": 67,
+  "sample_XXYY_ID_set_matches_previous_run": true,
+  "all_known_main_publication_dates_not_future": true,
+  "early_directory_rows": 18,
+  "supplement_rows": 73,
+  "no_empty_title": true,
+  "missing_doi": 9852
+}

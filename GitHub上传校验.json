@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "date": "2026-10-30",
+  "visibility": "private",
+  "inspected_files": 82,
+  "largest_file_bytes": 16065210,
+  "tracked_source_and_data_bytes": 45759300,
+  "model_and_github_credential_patterns": 0,
+  "runtime_and_personal_configuration_excluded": true,
+  "compressed_data_scanned": true,
+  "dataset_git_blobs_match_manifest": true,
+  "collector_public_application_constant": "CNKI public frontend APP_KEY, not a personal credential"
+}

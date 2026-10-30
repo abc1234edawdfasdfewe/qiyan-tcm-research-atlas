@@ -1,0 +1,33 @@
+# Local credentials, runtime files and operating-system files
+.runtime/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+*.pid
+*.key
+*.pem
+
+# Generated single-file UI embeds the same corpus already kept in data/
+/中医药热点计量工作台.html
+*.zip
+
+# Collection checkpoints can be regenerated; canonical snapshots are tracked
+/datasets/catalogue/数据/
+/datasets/enriched/pages/
+/datasets/enriched/publisher/
+/datasets/enriched/各刊/
+/datasets/enriched/cnki_enriched_all_scopes.json.gz
+/datasets/enriched/request_log.json
+/datasets/enriched/progress.json
+/datasets/enriched/publisher_progress.json
+/datasets/enriched/input_catalogue_manifest.json
+/datasets/enriched/*.html
+/datasets/enriched/全部文献详情.csv
+/datasets/enriched/全部文献详情.jsonl.gz
+/datasets/enriched/全部已出版文献_含摘要关键词.csv
+/datasets/enriched/提前上线文献_含摘要关键词.csv
+/datasets/enriched/增刊文献_含摘要关键词.csv

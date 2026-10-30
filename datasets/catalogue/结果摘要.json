@@ -1,0 +1,24 @@
+{
+  "as_of": "2026-10-29",
+  "scope_months": [
+    "2025-11",
+    "2026-10"
+  ],
+  "input_lines": 84,
+  "unique_journals": 67,
+  "main_records": 21709,
+  "main_unique_ids": 21709,
+  "main_issues": 790,
+  "expected_issue_slots": 828,
+  "missing_issue_slots": 37,
+  "journals_with_gaps": 23,
+  "early_directory_records": 18,
+  "supplement_records": 73,
+  "recovered_index_issues": 11,
+  "source_duplicates_removed": 1,
+  "missing_doi": 9852,
+  "sources": {
+    "CNKI API": 21480,
+    "publisher_yiigle": 229
+  }
+}

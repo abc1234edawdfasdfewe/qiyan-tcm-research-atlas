@@ -1,0 +1,597 @@
+{
+  "id": "51b1731f4f89fa1a",
+  "mode": "analyze",
+  "model": "gemini-4-argon-high",
+  "prompt_version": "tcm-atlas-ai-2.0",
+  "created_at": "2026-10-30T05:01:54.719170+00:00",
+  "seconds": 28.7,
+  "usage": {
+    "completion_tokens": 1896,
+    "total_tokens": 11380,
+    "prompt_tokens": 9484
+  },
+  "coverage": {
+    "matched_total": 14,
+    "sent_papers": 14,
+    "all_papers_included": true,
+    "selection": "全部命中文献",
+    "with_abstract": 14,
+    "truncated_abstracts": 1,
+    "abstract_character_limit": 1400,
+    "offset": 0,
+    "next_offset": null
+  },
+  "result": {
+    "summary": "本次检索共命中14篇文献（均含摘要），覆盖9种期刊。从摘要内容区分：原始实验机制研究共3篇（P3、P6为体外HK-2细胞实验，P11为体内db/db小鼠结合蛋白质组学实验），重点围绕SLC7A11/GPX4轴及ACSL4探讨中药单体/提取物对铁死亡的抑制作用；其余11篇均为综述或中医理论探讨（P1、P2、P4、P5、P7、P8、P9、P10、P12、P13、P14）。当前命中文献中未见直接的原始临床试验报告，临床信息仅在部分综述中被背景性提及（如P4、P12）。",
+    "findings": [
+      {
+        "title": "文献分布与关键词统计特征",
+        "detail": "检索命中的14篇文献分布在9种期刊中，其中《辽宁中医药大学学报》发文4篇，《中医药信息》与《中华中医药学刊》各2篇。高频关键词包括糖尿病肾病（11次）、铁死亡（5次）、信号通路（3次）、氧化应激（2次）与活性成分（2次）等。月度数据显示2025-11至2026-10期间单月命中在0至3篇之间波动。",
+        "basis": "statistics",
+        "refs": []
+      },
+      {
+        "title": "实验机制研究聚焦中药活性成分调控SLC7A11/GPX4与ACSL4通路",
+        "detail": "3篇原始实验文献均探讨了特定成分抑制铁死亡的机制：P3与P6采用高糖诱导人肾小管上皮细胞（HK-2）体外模型，结合铁死亡诱导剂（RSL3或Erastin）及抑制剂（Fer-1），分别验证了杨桃根DMDD调控GPX4/SLC7A11/FTH1轴、黄芩苷调控SLC7A11/GPX4及下调ACSL4以减轻细胞损伤及纤维化指标；P11采用STZ联合db/db小鼠体内模型及蛋白质组学技术，证实迷迭香酸可通过上调GPX4、SLC7A11并下调ACSL4改善小鼠糖脂代谢与肾脏病理。",
+        "basis": "papers",
+        "refs": [
+          "P3",
+          "P6",
+          "P11"
+        ]
+      },
+      {
+        "title": "综述与理论研究呈现多通路交联与名方/单味药总结背景",
+        "detail": "11篇文献属于综述或病机理论探讨：一部分从单味药、提取物或复方切入（如P4参芪地黄汤、P7黄芪活性成分、P8甘草提取物、P10中药多糖、P12真武汤），将抑制铁死亡作为其多靶点药理作用之一进行归纳；另一部分聚焦特定信号网络或中医病机（如P1氧化应激“清源-固本-截流”、P2细胞焦亡与毒损络脉、P5微血管病变、P9的SIRT1通路、P13“虚损痨瘵”分期防治、P14的AMPK/SLC7A11/GPX4自噬依赖性铁死亡）。",
+        "basis": "papers",
+        "refs": [
+          "P1",
+          "P2",
+          "P4",
+          "P5",
+          "P7",
+          "P8",
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "title": "缺乏直接临床试验数据，复方体内外铁死亡机制向临床转化存在待验证空间",
+        "detail": "本批14篇文献中无原始临床研究。P4虽提及参芪地黄汤广泛用于临床及调控xCT/GPX4和ACSL4/LPCAT3/ALOX15通路，但明确指出存在“机制研究不够系统、临床证据等级不高”的局限；P12虽从临床试验、活性成分、动物实验三维度综述真武汤治疗慢性肾脏病，但摘要未提供针对糖尿病肾病铁死亡指标的具体临床试验数据。复方干预铁死亡的临床有效性仍属待验证假设。",
+        "basis": "hypothesis",
+        "refs": [
+          "P4",
+          "P12"
+        ]
+      }
+    ],
+    "directions": [
+      {
+        "title": "中药复方（参芪地黄汤、真武汤）调控铁死亡的原始实验与临床证据核验",
+        "rationale": "P4和P12作为综述提及参芪地黄汤和真武汤在糖尿病肾病或慢性肾脏病中的应用及抑制铁死亡机制，但当前命中文献中缺乏这两首复方的原始实验或临床随机对照研究。",
+        "refs": [
+          "P4",
+          "P12"
+        ],
+        "query": "(参芪地黄汤 OR 真武汤) AND (糖尿病肾病 OR 糖尿病肾脏病) AND (铁死亡 OR GPX4 OR SLC7A11 OR 临床 OR 随机对照)",
+        "verification": "检索并筛选这两首复方的原始动物实验及临床试验文献，核查是否实际检测了患者或动物模型的铁代谢、脂质过氧化（如MDA、GSH）及GPX4/SLC7A11等指标。"
+      },
+      {
+        "title": "足细胞铁死亡与肾小管上皮细胞铁死亡的差异化中药干预核验",
+        "rationale": "现有体外实验（P3、P6）及综述（P14）主要聚焦肾小管上皮细胞（HK-2）损伤，而综述P8、P9、P13提及足细胞损伤在糖尿病肾病中的重要性，且关键词统计中“足细胞”仅出现1次，提示足细胞铁死亡的具体实验证据需进一步确认。",
+        "refs": [
+          "P3",
+          "P6",
+          "P8",
+          "P9",
+          "P13",
+          "P14"
+        ],
+        "query": "(糖尿病肾病 OR 糖尿病肾脏病) AND 铁死亡 AND (足细胞 OR MPC5)",
+        "verification": "在更大时间跨度或全库中检索探讨足细胞铁死亡的中医药原始研究，核实实验所用的足细胞系、造模条件及中药干预靶点是否与HK-2细胞存在差异。"
+      },
+      {
+        "title": "自噬依赖性铁死亡及SIRT1/AMPK上游信号调控的实验核查",
+        "rationale": "综述P9、P14分别强调了SIRT1和AMPK/SLC7A11/GPX4自噬依赖性铁死亡在糖尿病肾病中的作用，但本批3篇原始实验（P3、P6、P11）主要检测下游SLC7A11/GPX4/ACSL4，未在摘要中展示对自噬流或SIRT1/AMPK上游分子的直接干预验证。",
+        "refs": [
+          "P3",
+          "P6",
+          "P9",
+          "P11",
+          "P14"
+        ],
+        "query": "(糖尿病肾病 OR 糖尿病肾脏病) AND 铁死亡 AND (自噬 OR AMPK OR SIRT1)",
+        "verification": "核查是否有采用基因敲降/过表达或通路抑制剂验证中药通过SIRT1或AMPK调控自噬进而影响铁死亡的原始实验论文。"
+      }
+    ],
+    "limitations": [
+      "本次分析仅基于14篇文献的题录与摘要片段（其中P4摘要存在截断），未读取全文，无法评估P3、P6、P11的具体实验图表质量与统计学严谨性。",
+      "数据时间范围局限于2025-11至2026-10，且存在37个计划刊期缺失，单月命中数较少，不能据此推断该领域的长期发表趋势或断言研究空白。",
+      "缺乏被引频次与参考文献数据，无法评估各篇综述及实验研究在学术网络中的影响力。",
+      "共同提及的中医证候（如脾肾两虚、气阴两虚）与铁死亡信号通路的关联目前仅停留在理论探讨与综述层面，不能视为已证实的因果机制。"
+    ],
+    "followups": [
+      "如果需要深入评估实验质量，是否需要调取P3、P6、P11的全文以核查其铁死亡工具药对照设计及Western Blot验证细节？",
+      "针对参芪地黄汤或黄芪、黄芩苷等高频提及的方药，是否需要将检索词扩展至“脂质过氧化”或“GPX4”以捕获未显式标引“铁死亡”的早期临床与实验文献？",
+      "是否需要进一步区分体内不同动物模型（如db/db小鼠与STZ诱导大鼠）在中药干预铁死亡研究中的指标差异？"
+    ]
+  },
+  "warnings": [],
+  "evidence": [
+    {
+      "ref": "P1",
+      "id": "LZXB202610028",
+      "title": "基于“清源-固本-截流”探讨中医药调控氧化应激治疗糖尿病肾病的研究进展",
+      "keywords": "糖尿病肾病; 氧化应激; 机制; 中医药",
+      "abstract": "糖尿病肾病（diabetic nephropathy,DN）是糖尿病（diabetes mellitus,DM）最主要的微血管并发症之一，其发生发展与持续的氧化应激（oxidative stress,OS）密切相关。OS在高糖环境下由线粒体功能障碍、NADPH氧化酶（NOX）激活及晚期糖基化终末产物（AGEs）积累等多源头触发，并通过干扰Keap1/Nrf2/ARE、SIRT1/AMPK/PGC-1α等内源性抗氧化防御系统，导致活性氧（reactive oxygen species,ROS）过度累积。过量ROS作为关键信号分子，进一步激活NF-κB、TGF-β/Smad等通路，驱动肾脏炎症反应、纤维化及细胞凋亡、焦亡、铁死亡等多种程序性细胞死亡，构成复杂的损伤网络。中医药凭借“整体观念、辨证论治”及多成分、多靶点、多通路的调控优势，在干预DN的OS网络中展现出独特潜力。文章系统综述了中医药通过“清源”（抑制ROS生成）、“固本”（增强抗氧化防御）、“截流”（阻断下游损伤通路）3个层次，调控上述关键信号通路的研究进展。旨在为理论创新与临床转化提供依据，推动从经验复方向机制明确、质量可控的现代网络调控药物转化。",
+      "abstract_truncated": false,
+      "has_abstract": true,
+      "journal": "辽宁中医药大学学报",
+      "year": "2026",
+      "issue": "10",
+      "doi": "10.13194/j.issn.1673-842X.2026.10.028",
+      "url": "https://doi.org/10.13194/j.issn.1673-842X.2026.10.028"
+    },
+    {
+      "ref": "P2",
+      "id": "SJKX202610031",
+      "title": "基于“气虚致瘀，毒损络脉”理论探讨糖尿病肾病病机与治疗：聚焦细胞焦亡机制",
+      "keywords": "糖尿病肾病; 细胞焦亡; 信号通路; 中医药; 机制研究",
+      "abstract": "糖尿病肾病（Diabetic kidney disease,DKD）是导致终末期肾脏病的主要原因之一，中医将其归为消渴类病，多数医家认为糖尿病肾病是消渴日久不愈，脾胃气虚无力运血，蕴生瘀血、浊毒等病理产物，“本虚”与“标实”相互作用，损害肾之络脉，致使肾络瘀痹不通。当前糖尿病肾病的发病机制涉及细胞焦亡、凋亡、自噬、铁死亡和氧化应激等多个方面。细胞焦亡是一种新型程序性细胞死亡方式，可以通过硫氧还蛋白互作蛋白（Recombinant thioredoxin-interacting protein,TXNIP）/NOD样受体热蛋白结构域相关蛋白3(NOD-like receptor family pyrin domain containing 3,NLRP3)/半胱氨酸蛋白水解酶（Cysteinyl aspartate specific proteinase 1,Caspase-1）/消皮素D(Gasdermin D,GSDMD)信号通路、核因子κB(Nuclear factor kappaB,NF-κB)/NLRP3/Caspase-1/GSDMD信号通路、Caspase-3/GSDME通路这三条信号通路的异常激活导致炎症反应和肾脏细胞损伤，其过程中产生的各种细胞因子推动了糖尿病肾病的发生发展，因此抑制炎性因子表达和调控细胞焦亡通路可能成为防治糖尿病肾病的新策略。细胞焦亡诱导糖尿病肾病的发展也是“气虚致瘀，毒损络脉”中医病机的微观体现。本文从细胞焦亡及相关信号通路方面出发，进一步探究中医药治疗糖尿病肾病的机制，为中西医结合治疗糖尿病肾病提供新的思路。",
+      "abstract_truncated": false,
+      "has_abstract": true,
+      "journal": "世界科学技术-中医药现代化",
+      "year": "2026",
+      "issue": "10",
+      "doi": "",
+      "url": "https://kns.cnki.net/kcms2/article/abstract?dbcode=CJFD&filename=SJKX202610031"
+    },
+    {
+      "ref": "P3",
+      "id": "ZYCA20261026010",
+      "title": "杨桃根DMDD调控GPX4/SLC7A11/FTH1轴抑制铁死亡减轻高糖所致HK-2细胞损伤的机制研究",
+      "keywords": "2-十二烷基-6-甲氧基-2,5-二烯-1,4-环己二酮; DMDD; GPX4; SLC7A11; FTH1; 糖尿病肾病",
+      "abstract": "目的:探讨2-十二烷基-6-甲氧基-2,5-二烯-1,4-环己二酮（2-Dodecyl-6-Methoxycyclohexa-2,5-Diene-1,4-Dione,DMDD）调控GPX4/SLC7A11/FTH1信号通路减轻高糖所致HK-2细胞损伤的作用机制。方法:采用33mmol/L葡萄糖损伤肾小管上皮HK-2细胞构建体外DN模型,分为高糖组（33 mmol/L）和高糖联合DMDD高、中、低浓度组（6、3、1.5μmol/L）组及铁死亡抑制剂（Ferrostain-1,Fer-1）组、Fer-1+DMDD高浓度组、Fer-1+DMDD低浓度组、铁死亡诱导剂（RSL3）组、RSL3+DMDD高浓度组、RSL3+DMDD低浓度组,另设低糖（5.5 mmol/L）组。含药物培养液干预细胞24 h后,CCK-8测定HK-2细胞活力,流式细胞术测定细胞ROS水平,ELISA试剂盒测定HK-2细胞中GSH、SOD、MDA、LDH表达,荧光法检测HK-2细胞Fe2+表达,qRT-PCR和Western Blot分别检测HK-2细胞中GPX4、SLC7A11、FTH1 mRNA和蛋白表达。结果:高糖刺激下,HK-2细胞GSH、SOD水平显著降低,ROS、MDA、LDH、Fe2+水平显著升高,GPX4、SLC7A11、FTH1 mRNA和蛋白表达显著降低（P<0.05）。经DMDD高浓度干预后,GSH、SOD表达显著升高,ROS、MDA、LDH、Fe2+水平显著降低,且GPX4、SLC7A11、FTH1 mRNA及蛋白表达显著升高（P<0.05）。结论:DMDD可能通过调控GPX4/SLC7A11/FTH1轴减轻高糖所致HK-2细胞损伤发挥保护DN的作用。进一步采用铁死亡工具药验证显示,铁死亡抑制剂Fer-1干预可重现DMDD对高糖损伤HK-2细胞的保护效应,铁死亡诱导剂RSL3可加剧高糖诱导的细胞损伤及铁死亡表型,DMDD共干预可显著逆转RSL3的诱导效应。",
+      "abstract_truncated": false,
+      "has_abstract": true,
+      "journal": "中药材",
+      "year": "2026",
+      "issue": "10",
+      "doi": "10.13863/j.issn1001-4454.2026.10.034",
+      "url": "https://doi.org/10.13863/j.issn1001-4454.2026.10.034"
+    },
+    {
+      "ref": "P4",
+      "id": "LZXB202609014",
+      "title": "参芪地黄汤治疗糖尿病肾病作用机制研究",
+      "keywords": "参芪地黄汤; 糖尿病肾病; 作用机制; 综述",
+      "abstract": "糖尿病肾病（diabetic nephropathy,DN）作为糖尿病最常见且严重的微血管并发症，是导致终末期肾病的主要病因。近年来，中医药在DN防治中展现出多成分、多靶点、整体调节的独特优势。参芪地黄汤作为益气养阴、脾肾同治的经典方剂，被广泛用于气阴两虚型DN的临床治疗，其作用机制涉及抑制炎症反应、改善氧化应激、延缓肾脏纤维化、调节糖脂代谢、调控细胞自噬及抑制铁死亡等多个方面。研究表明，参芪地黄汤可通过抑制核因子κB(nuclear factor kappa-B,NF-κB)/NOD样受体热蛋白结构域相关蛋白3(NOD-like receptor family pyrin domain containing protein 3,NLRP3)炎症信号通路，降低白细胞介素-1β(interleukin-1β,IL-1β)、肿瘤坏死因子-α(tumor necrosis factor-α,TNF-α)等促炎因子水平，减轻肾脏炎症损伤；通过激活核因子E2相关因子2/血红素加氧酶-1(nuclear factor erythroid 2-related factor 2/heme oxygenase-1,Nrf2/HO-1)等抗氧化通路，提升超氧化物歧化酶（superoxide dismutase,SOD）、谷胱甘肽过氧化物酶（glutathione peroxidase,GSH-Px）等抗氧化酶活性，缓解高糖诱导的氧化应激；通过调控转化生长因子-β(transforming growth factor-β,TGF-β)/Smad、Wnt家族配体/β-连环蛋白（Wnt family ligand/β-catenin,Wnt/β-catenin）信号通路，抑制上皮-间质转化（epithelial-mesenchymal transition,EMT）及细胞外基质过度积聚，延缓肾纤维化进程。在代谢调控方面，该方可调节磷脂酰肌醇3-激酶/蛋白激酶B(phosphatidylinositol 3-kinase/protein kinase B,PI3K/Akt)信号通路，改善糖脂代谢紊乱，保护胰岛β细胞功能。此外，参芪地黄汤还能通过沉默信息调节因子1/叉头框蛋白O1(sirtuin 1/forkhead box protein O1,SIRT1/FoxO1)、哺乳动物雷帕霉素靶蛋白（mammalian target of rapamycin,mTOR）等通路增强细胞自噬活性，并通过调控xCT/谷胱甘肽过氧化物酶4(glutathione peroxidase 4,GPX4)通路酰基辅酶A合成酶长链家族成员4/溶血磷脂酰胆碱酰基转移酶3/花生四烯酸15-脂氧合酶（acyl-coA synthetase long-chain family member 4/Lysophosphatidylcholine acyltransferase 3/arachidonate 15-lipoxygenase,ACSL4/LPCAT3/ALOX15）通路，抑制铁依赖性脂质过氧化，减轻肾细胞铁死亡。尽管现有研究从多角度揭示了参芪地黄汤治疗DN的作用机制，但仍存在机制研究不够系统、临床证据等级不高等局限。未来需开展多中心、大样本、随机对照的临床研究，并结合系统药理学、网络药理学及人工智能",
+      "abstract_truncated": true,
+      "has_abstract": true,
+      "journal": "辽宁中医药大学学报",
+      "year": "2026",
+      "issue": "09",
+      "doi": "10.13194/j.issn.1673-842X.2026.09.014",
+      "url": "https://doi.org/10.13194/j.issn.1673-842X.2026.09.014"
+    },
+    {
+      "ref": "P5",
+      "id": "TJZY202608016",
+      "title": "中草药干预铁死亡：糖尿病微血管并发症新策略",
+      "keywords": "中草药; 铁死亡; 糖尿病; 糖尿病微血管病变; 糖尿病视网膜病变; 糖尿病肾脏病",
+      "abstract": "糖尿病微血管病变严重危害患者预后，其多种临床表现可能共享共同的病理基础。铁死亡作为一种铁依赖性的非凋亡性细胞死亡方式，被认为是该病变潜在的共同机制。文章概述了铁死亡在糖尿病微血管并发症中的作用，阐明其通过细胞内铁过载、脂质过氧化及抗氧化防御失衡等机制，驱动糖尿病视网膜病变、糖尿病肾病、糖尿病神经病变、糖尿病心肌病及糖尿病足溃疡的发生与发展。在此基础上，重点综述了中草药及其活性成分通过调控核因子E2相关因子2(Nrf2)、谷胱甘肽（GSH）/谷胱甘肽过氧化物酶4(GPX4)、铁代谢等相关通路抑制铁死亡，从而改善上述并发症的研究进展。从糖尿病微血管病变共同病理机制的视角，阐明中草药靶向铁死亡防治糖尿病微血管病变的潜在价值，为相关防治策略提供理论依据与研究思路。",
+      "abstract_truncated": false,
+      "has_abstract": true,
+      "journal": "天津中医药",
+      "year": "2026",
+      "issue": "08",
+      "doi": "",
+      "url": "https://kns.cnki.net/kcms2/article/abstract?dbcode=CJFD&filename=TJZY202608016"
+    },
+    {
+      "ref": "P6",
+      "id": "ZYXN202608005",
+      "title": "黄芩苷通过抑制铁死亡缓解高糖诱导HK-2细胞损伤的机制研究",
+      "keywords": "糖尿病肾病; 2型糖尿病; 铁死亡; 黄芩苷; 肾纤维化; 肾小管上皮细胞",
+      "abstract": "目的 基于铁死亡探讨黄芩苷对高糖诱导的人肾小管上皮HK-2细胞损伤的保护作用。方法 体外培养HK-2细胞，按梯度浓度高糖（10、15、20、25、30、40、60、80 mmol/L）、梯度浓度BA（10、20、30、40、50、60、80、200µmol/L）及梯度浓度高糖联合80µmol/L BA的分组方式，采用CCK-8实验检测细胞活力。后续研究分为对照组（Control组，不作任何处理）、高糖模型组（HG组，30 mmol/L葡萄糖处理）、铁死亡诱导剂组（Era组，1µmol/L铁死亡诱导剂Erastin处理）、高糖联合黄芩苷干预组（HG+80µmol/L BA组，30 mmol/L葡萄糖+80µmol/L黄芩苷），以及激动剂联合黄芩苷组（Era+80µmol/L BA组，1µmol/L Erastin+80µmol/L黄芩苷）。H2DCFH-DA探针法测定活性氧（ROS）水平；化学比色法测定谷胱甘肽（GSH）含量；荧光探针反应测定Fe2+含量；RT-qPCR技术检测与纤维化相关的关键基因表达；Western blot法检测铁死亡相关的关键蛋白，包括谷胱甘肽过氧化物酶4（GPX4）、溶质载体家族7成员11（SLC7A11）以及酰基辅酶A合成酶长链家族成员4（ACSL4）的表达。结果 最终确定利用30 mmol/L葡萄糖干预HK-2细胞，构建肾小管上皮细胞的损伤模型，80µmol/L作为BA的处理浓度。与Control组比较，HG组及Era组细胞内ROS水平、Fe2+含量、纤维化相关基因α-SMA,FN-1,COL1α1,COL4a-1,TGF-β mRNA的表达水平均显著升高（P <0.05,P <0.01）、铁死亡促进蛋白ACSL4的表达水平显著上调（P <0.01）,GSH含量、SLC7A11和GPX4的蛋白水平显著下降（P <0.01）。与HG组及Era组比较，Era+80µmol/L BA组及HG+80µmol/L BA组细胞内ROS水平、Fe2+含量、纤维化相关基因α-SMA,FN-1,COL1α1,COL4a-1,TGF-βmRNA的表达水平均显著降低（P <0.01）、铁死亡促进蛋白ACSL4的表达水平显著下调（P <0.01）,GSH含量、SLC7A11和GPX4的蛋白水平显著升高（P <0.01）。结论 黄芩苷可保护HK-2细胞免受高糖诱导的损伤，其作用机制可能与激活SLC7A11/GPX4通路及调控ACSL4等铁死亡关键蛋白有关。",
+      "abstract_truncated": false,
+      "has_abstract": true,
+      "journal": "中医药信息",
+      "year": "2026",
+      "issue": "08",
+      "doi": "10.19656/j.cnki.1002-2406.20260805",
+      "url": "https://doi.org/10.19656/j.cnki.1002-2406.20260805"
+    },
+    {
+      "ref": "P7",
+      "id": "ZYHS202607024",
+      "title": "基于“治水者必先治气”探讨黄芪活性成分治疗糖尿病肾病的研究进展",
+      "keywords": "黄芪; 糖尿病肾病; 活性成分; 黄芪甲苷Ⅳ; 黄芪多糖",
+      "abstract": "糖尿病肾病(diabetic kidney disease, DKD)是糖尿病(diabetes mellitus, DM)常见的微血管并发症之一，也是慢性肾脏病(chronic kidney disease, CKD)和终末期肾病(end-stage renal disease, ESRD)的主要原因之一。近年来，中医药在DKD的治疗和预防中发挥了重要的作用，基于“治水者必先治气”理论探究了补气圣药“黄芪”及其活性成分在治疗DKD中的主要作用机制。研究发现黄芪及其活性成分如黄芪总黄酮(total flavonoids of astragalus, TFA)、毛蕊异黄酮(calycosin)、黄芪甲苷Ⅳ(astragalosideⅣ,AS-Ⅳ)、黄芪多糖(astragalus polysaccharide, APS)等可以通过改善胰岛素抵抗、抑制氧化应激、抗炎、延缓肾纤维化、抗细胞凋亡、抑制铁死亡、调节自噬、调控肠道菌群等多种途径防治DKD,为中医药治疗DKD提供新的用药思路和方法。",
+      "abstract_truncated": false,
+      "has_abstract": true,
+      "journal": "中华中医药学刊",
+      "year": "2026",
+      "issue": "07",
+      "doi": "10.13193/j.issn.1673-7717.2026.07.024",
+      "url": "https://doi.org/10.13193/j.issn.1673-7717.2026.07.024"
+    },
+    {
+      "ref": "P8",
+      "id": "HQZY202603037",
+      "title": "甘草及其提取物治疗糖尿病肾病药理机制的研究进展",
+      "keywords": "甘草; 提取物; 糖脂代谢; 抗氧化; 炎性损伤; 细胞凋亡; 纤维化; 足细胞",
+      "abstract": "甘草及其提取物可通过抑制α-葡萄糖苷酶活性改善葡萄糖耐受性，进而调控糖脂代谢;还可激活内源性抗氧化防御系统增强机体抗氧化活性，显著降低活性氧水平，减轻糖尿病肾病的氧化应激损伤。此外，其可通过调控细胞周期抑制肾细胞异常增殖;通过抑制经典炎症通路活化靶向调节沉默信息调节因子1、晚期糖基化终产物受体、高迁移率族蛋白B1的表达，同时调节血管通透性减轻肾组织细胞的炎性损伤。甘草及其提取物还可通过调节血管通透性，降低铁离子水平，抑制铁死亡，减轻肾组织损伤;通过调节能量代谢调控凋亡相关蛋白表达，抑制肾组织细胞凋亡;通过阻止胶原蛋白沉积阻断炎症因子与纤维化因子释放，抑制上皮—间质转化进程，发挥抗肾组织纤维化作用;同时可通过减轻足细胞损伤，保护足细胞的结构与功能完整性。",
+      "abstract_truncated": false,
+      "has_abstract": true,
+      "journal": "环球中医药",
+      "year": "2026",
+      "issue": "03",
+      "doi": "",
+      "url": "https://kns.cnki.net/kcms2/article/abstract?dbcode=CJFD&filename=HQZY202603037"
+    },
+    {
+      "ref": "P9",
+      "id": "LZXB202603034",
+      "title": "糖尿病肾病SIRT1信号调节及中医药作用研究进展",
+      "keywords": "糖尿病肾病; SIRT1; 机制; 中医药; 研究进展",
+      "abstract": "糖尿病肾病（diabetic nephropathy,DN）是糖尿病严重的微血管并发症及终末期肾病的主要诱因，其特征性病理改变包括足细胞程序性死亡、肾小球滤过屏障破坏及细胞外基质异常沉积导致的进行性纤维化。沉默信息调节因子2同源体1（silencing information regulatory factor 2 homologous 1,SIRT1）作为一种NAD+依赖的Ⅲ类组蛋白去乙酰化酶，通过调节氧化应激、炎症反应、脂质代谢、细胞凋亡、焦亡、铁死亡及肾纤维化等多条病理途径，在延缓DN进展中发挥核心保护作用。中医药防治DN具有多通路、多靶点、安全低毒性的优势，通过调控SIRT1相关信号通路，显著改善肾功能损伤并延缓DN进程。该文系统综述了SIRT1的生物学功能及其在DN发病机制中的关键作用，重点阐述了中药复方，中药单体及有效活性成分激活抗氧化系统，抑制炎症因子释放，改善脂质代谢紊乱，抑制细胞凋亡、焦亡、铁死亡，增强自噬活性以及减轻肾纤维化防治DN的最新研究，深入探讨该通路作为中医治疗DN的创新靶点价值，以期为临床开发新型DN防治药物提供了重要的理论依据和实验基础。",
+      "abstract_truncated": false,
+      "has_abstract": true,
+      "journal": "辽宁中医药大学学报",
+      "year": "2026",
+      "issue": "03",
+      "doi": "10.13194/j.issn.1673-842X.2026.03.033",
+      "url": "https://doi.org/10.13194/j.issn.1673-842X.2026.03.033"
+    },
+    {
+      "ref": "P10",
+      "id": "SJZA202606021",
+      "title": "中药多糖防治糖尿病肾病的作用机制研究进展",
+      "keywords": "中药多糖; 糖尿病肾病; 糖尿病; 作用机制; 信号通路; 胰岛素抵抗; 氧化应激; 炎症反应",
+      "abstract": "糖尿病肾病(DN)是糖尿病最常见的并发症之一，也是导致终末期肾病的主要原因之一。中药多糖是从植物、动物、藻类等中提取的一类活性多糖，具有特殊的生物活性。近年来，中药多糖因其多靶点、多作用的特点，在防治DN中展现了巨大的潜力。中药多糖通过改善胰岛素抵抗、抑制氧化应激、抗炎、延缓肾纤维化、抗细胞凋亡、抑制铁死亡、调节自噬、调控肠道菌群等途径防治DN。",
+      "abstract_truncated": false,
+      "has_abstract": true,
+      "journal": "世界中医药",
+      "year": "2026",
+      "issue": "06",
+      "doi": "",
+      "url": "https://kns.cnki.net/kcms2/article/abstract?dbcode=CJFD&filename=SJZA202606021"
+    },
+    {
+      "ref": "P11",
+      "id": "ZYXN202603006",
+      "title": "基于蛋白质组学探讨迷迭香酸治疗糖尿病肾病的作用机制",
+      "keywords": "迷迭香酸; 糖尿病肾病; 蛋白质组学; 铁死亡",
+      "abstract": "目的 探讨迷迭香酸（RA）对糖尿病肾病（DN）的保护作用及分子机制。方法 18只db/db小鼠采用链脲佐菌素（STZ）构建DN模型，造模成功后随机分为模型组（Mod组）、达格列净组（DAPA组）和迷迭香酸组（RA组），db/m小鼠为对照组（Con组）；DAPA组按1.3 mg/（kg·d）灌胃达格列净，RA组按100 mg/（kg·d）灌胃迷迭香酸，Con组和Mod组则灌胃等体积蒸馏水，每日1次，持续8周。干预8周后，检测各组小鼠糖脂代谢指标空腹血糖、总胆固醇（TC）、甘油三酯（TG）、高密度脂蛋白（HDL）、低密度脂蛋白（LDL），肾功能指标血清肌酐（Scr）、尿素氮（BUN）及尿N-乙酰-β-D-氨基葡萄糖苷酶（NAG）、中性粒细胞明胶酶相关脂质运载蛋白（NGAL）,Masson染色观察肾脏病理，蛋白质组学筛选差异表达蛋白及通路，并进行验证。结果 与Mod组比较，RA组小鼠糖脂代谢显著改善，表现为空腹血糖降低、TC、TG、LDL降低及HDL升高；肾功能指标（Scr、BUN、NAG、NGAL）改善，肾脏胶原沉积减少；蛋白质组学分析显示，DN模型中存在铁死亡通路激活，RA干预后可上调谷胱甘肽过氧化物酶4(GPX4)、溶质载体家族7成员11(SLC7A11)mRNA表达，下调长链脂酰辅酶A合成酶4(ACSL4)mRNA表达，并改善氧化应激状态，表现为丙二醛（MDA）降低，超氧化物歧化酶（SOD）活性升高。结论 RA可通过抑制肾脏铁死亡改善DN小鼠肾损伤。",
+      "abstract_truncated": false,
+      "has_abstract": true,
+      "journal": "中医药信息",
+      "year": "2026",
+      "issue": "03",
+      "doi": "10.19656/j.cnki.1002-2406.20260306",
+      "url": "https://doi.org/10.19656/j.cnki.1002-2406.20260306"
+    },
+    {
+      "ref": "P12",
+      "id": "ZYHS202602020",
+      "title": "真武汤及其单味药有效成分在慢性肾脏疾病中的研究进展",
+      "keywords": "真武汤; 有效成分; 慢性肾脏疾病; 研究进展",
+      "abstract": "慢性肾脏疾病乃全球公共卫生之严峻挑战。真武汤作为医圣的经典名方之一，补泻并施、辛热渗利，主治阳虚水泛证。临床报道中常被加减运用或联合中医外治或联用西药治疗肾病综合征、慢性肾小球肾炎、特发性膜性肾病、IgA肾病、糖尿病肾病、狼疮性肾炎、乙型病毒性肝炎肾损伤、慢性肾衰竭、心肾综合征等多种慢性肾脏疾病。此外，真武汤中单味药主要活性成分展现出抗氧化、抗炎、免疫调节、抗细胞凋亡、促进自噬、抑制铁死亡、抗纤维化、利尿以及调节肠道菌群等多种药理功效。通过总结有关文献报道，从该方临床试验、其单味药的有效活性成分在慢性肾脏疾病中的药理作用、动物基础实验3个维度进行系统分析，旨在为真武汤的临床规范化应用和药理学研究提供支持。",
+      "abstract_truncated": false,
+      "has_abstract": true,
+      "journal": "中华中医药学刊",
+      "year": "2026",
+      "issue": "02",
+      "doi": "10.13193/j.issn.1673-7717.2026.02.029",
+      "url": "https://doi.org/10.13193/j.issn.1673-7717.2026.02.029"
+    },
+    {
+      "ref": "P13",
+      "id": "HNZX202601017",
+      "title": "从“虚损痨瘵，燮理气阴”探讨糖尿病肾病铁死亡病机及防治思路",
+      "keywords": "糖尿病肾病; 铁死亡; 虚损痨瘵; 燮理气阴; 脾肾两虚; 溶质载体家族7成员11; 长链酰基辅酶A合成酶家族成员4",
+      "abstract": "本文基于“虚损痨瘵，燮理气阴”理论，探讨糖尿病肾病以铁死亡为核心的病理机制与防治策略。脾肾两虚为本，湿热、痰瘀、浊毒为标，共同导致铁稳态失衡，表现为溶质载体家族7成员11(SLC7A11，又名xCT)、长链酰基辅酶A合成酶家族成员4(GPX4)下调与长链酰基辅酶A合成酶家族成员4(ACSL4)上调，诱发脂质过氧化与铁死亡，损伤肾小管上皮及足细胞；进而通过损伤相关分子模式（DAMPs）、转化生长因子-β(TGF-β)/Smad及Nod样受体蛋白3(NLRP3)信号促进成纤维细胞活化与胶原沉积，导致肾纤维化。遵循“治未病”理念，提出三级防治策略：早期健脾益气养阴并化湿，联合抗氧化与抗铁死亡，延缓微量白蛋白尿出现；中期清热解毒、活血通络，协同调控核因子E2相关因子2(Nrf2)/GPX4与ACSL4及TGF-β/Smad轴，抑制炎症与纤维化放大；后期扶正培本、温阳利水，兼顾解毒通络与肾脏保护，改善症状与预后。",
+      "abstract_truncated": false,
+      "has_abstract": true,
+      "journal": "湖南中医药大学学报",
+      "year": "2026",
+      "issue": "01",
+      "doi": "",
+      "url": "https://kns.cnki.net/kcms2/article/abstract?dbcode=CJFD&filename=HNZX202601017"
+    },
+    {
+      "ref": "P14",
+      "id": "LZXB202511030",
+      "title": "中药基于AMPK/SLC7A11/GPX4通路调控自噬依赖性铁死亡治疗糖尿病肾病间质纤维化作用机制研究进展",
+      "keywords": "铁死亡; 糖尿病肾病; 自噬; 活性成分; 信号通路",
+      "abstract": "糖尿病肾病（diabetic kidney disease,DKD）是糖尿病的主要微血管并发症之一。目前，铁死亡相关机制已被证明在DKD的发生和发展中起着重要作用，铁死亡是一种不受细胞凋亡控制的细胞死亡，其死亡程序受谷胱甘肽过氧化物酶4(GPX4)调节，并以显著的脂质过氧化为诱因。其中溶质载体家族7成员11(SLC7A11)/GPX4是一条关键的铁死亡信号通路，并已确定可以通过抑制SLC7A11/GPX4信号通路的铁死亡来干预DKD的发生发展。以前的研究认为自噬与铁死亡无关，但最近的研究证实自噬可能是铁死亡的一个重要因素。该文从中药干预调控AMP激活的蛋白激酶（AMPK）/SLC7A11/GPX4介导的自噬依赖性铁死亡角度出发，探讨其预防和治疗DKD的作用机制。该文重点总结铁死亡参与DKD发生发展的过程，分别从铁死亡的机制及关键调控因子、肾脏铁代谢异常以及细胞活性氧的积聚是促进肾小管上皮细胞损伤的发病机制几方面说明；并对自噬对铁死亡的抑制作用进行深入论述，最后利用中药多成分、多靶点、多途径的作用特点，阐述中药的有效成分通过抑制自噬依赖性铁死亡来延缓及预防DKD的发生，以期为DKD的临床治疗和中药新药的研发提供新思路。",
+      "abstract_truncated": false,
+      "has_abstract": true,
+      "journal": "辽宁中医药大学学报",
+      "year": "2025",
+      "issue": "11",
+      "doi": "10.13194/j.issn.1673-842X.2025.11.030",
+      "url": "https://doi.org/10.13194/j.issn.1673-842X.2025.11.030"
+    }
+  ],
+  "corpus_sha256": "e28129bf6bbbe4e806f741f57d5f2744494ad88d0b1ce14e2e50d15e87f635cc",
+  "query": "铁死亡 AND 糖尿病肾病",
+  "question": "请结合这批论文的摘要，区分机制研究、临床证据与综述背景，提出可继续核验的研究方向。请引用对应文献。",
+  "statistics": {
+    "matched_records": 14,
+    "with_abstract": 14,
+    "with_keywords": 14,
+    "journal_count": 9,
+    "keywords": [
+      {
+        "term": "糖尿病肾病",
+        "records": 11
+      },
+      {
+        "term": "铁死亡",
+        "records": 5
+      },
+      {
+        "term": "信号通路",
+        "records": 3
+      },
+      {
+        "term": "氧化应激",
+        "records": 2
+      },
+      {
+        "term": "活性成分",
+        "records": 2
+      },
+      {
+        "term": "机制",
+        "records": 2
+      },
+      {
+        "term": "糖尿病",
+        "records": 2
+      },
+      {
+        "term": "炎症反应",
+        "records": 1
+      },
+      {
+        "term": "细胞凋亡",
+        "records": 1
+      },
+      {
+        "term": "自噬",
+        "records": 1
+      },
+      {
+        "term": "2型糖尿病",
+        "records": 1
+      },
+      {
+        "term": "细胞焦亡",
+        "records": 1
+      },
+      {
+        "term": "抗氧化",
+        "records": 1
+      },
+      {
+        "term": "胰岛素抵抗",
+        "records": 1
+      },
+      {
+        "term": "黄芪",
+        "records": 1
+      },
+      {
+        "term": "肾纤维化",
+        "records": 1
+      },
+      {
+        "term": "糖脂代谢",
+        "records": 1
+      },
+      {
+        "term": "机制研究",
+        "records": 1
+      },
+      {
+        "term": "糖尿病视网膜病变",
+        "records": 1
+      },
+      {
+        "term": "蛋白质组学",
+        "records": 1
+      },
+      {
+        "term": "有效成分",
+        "records": 1
+      },
+      {
+        "term": "糖尿病肾脏病",
+        "records": 1
+      },
+      {
+        "term": "纤维化",
+        "records": 1
+      },
+      {
+        "term": "黄芩苷",
+        "records": 1
+      },
+      {
+        "term": "足细胞",
+        "records": 1
+      },
+      {
+        "term": "黄芪多糖",
+        "records": 1
+      },
+      {
+        "term": "真武汤",
+        "records": 1
+      },
+      {
+        "term": "甘草",
+        "records": 1
+      },
+      {
+        "term": "脾肾两虚",
+        "records": 1
+      },
+      {
+        "term": "迷迭香酸",
+        "records": 1
+      }
+    ],
+    "journals": [
+      {
+        "name": "辽宁中医药大学学报",
+        "records": 4
+      },
+      {
+        "name": "中医药信息",
+        "records": 2
+      },
+      {
+        "name": "中华中医药学刊",
+        "records": 2
+      },
+      {
+        "name": "世界科学技术-中医药现代化",
+        "records": 1
+      },
+      {
+        "name": "中药材",
+        "records": 1
+      },
+      {
+        "name": "天津中医药",
+        "records": 1
+      },
+      {
+        "name": "环球中医药",
+        "records": 1
+      },
+      {
+        "name": "世界中医药",
+        "records": 1
+      },
+      {
+        "name": "湖南中医药大学学报",
+        "records": 1
+      }
+    ],
+    "monthly": [
+      {
+        "period": "2025-11",
+        "base": 1229,
+        "hits": 1,
+        "share_percent": 0.08136696501220504
+      },
+      {
+        "period": "2025-12",
+        "base": 1378,
+        "hits": 0,
+        "share_percent": 0
+      },
+      {
+        "period": "2026-01",
+        "base": 1217,
+        "hits": 0,
+        "share_percent": 0
+      },
+      {
+        "period": "2026-02",
+        "base": 1387,
+        "hits": 1,
+        "share_percent": 0.07209805335255948
+      },
+      {
+        "period": "2026-03",
+        "base": 1208,
+        "hits": 2,
+        "share_percent": 0.16556291390728478
+      },
+      {
+        "period": "2026-04",
+        "base": 1377,
+        "hits": 0,
+        "share_percent": 0
+      },
+      {
+        "period": "2026-05",
+        "base": 1195,
+        "hits": 0,
+        "share_percent": 0
+      },
+      {
+        "period": "2026-06",
+        "base": 1381,
+        "hits": 0,
+        "share_percent": 0
+      },
+      {
+        "period": "2026-07",
+        "base": 1176,
+        "hits": 1,
+        "share_percent": 0.08503401360544217
+      },
+      {
+        "period": "2026-08",
+        "base": 1354,
+        "hits": 2,
+        "share_percent": 0.14771048744460857
+      },
+      {
+        "period": "2026-09",
+        "base": 1188,
+        "hits": 1,
+        "share_percent": 0.08417508417508417
+      },
+      {
+        "period": "2026-10",
+        "base": 1329,
+        "hits": 3,
+        "share_percent": 0.2257336343115124
+      }
+    ],
+    "trend_journals": 43
+  },
+  "parameters": {
+    "query": "铁死亡 AND 糖尿病肾病",
+    "field": "all",
+    "journal": -1,
+    "from": 0,
+    "to": 11,
+    "dedup": true,
+    "expand": true,
+    "abstractOnly": false,
+    "excludeSuspect": false,
+    "hideGeneric": true,
+    "completeTrend": true,
+    "nodes": 32,
+    "minCo": 3,
+    "edgeWeight": "cosine",
+    "matrix": "疾病|方法",
+    "trendMetric": "share"
+  },
+  "matched_document_ids": [
+    "LZXB202610028",
+    "SJKX202610031",
+    "ZYCA20261026010",
+    "LZXB202609014",
+    "TJZY202608016",
+    "ZYXN202608005",
+    "ZYHS202607024",
+    "HQZY202603037",
+    "LZXB202603034",
+    "SJZA202606021",
+    "ZYXN202603006",
+    "ZYHS202602020",
+    "HNZX202601017",
+    "LZXB202511030"
+  ],
+  "local_checked_at": "2026-10-30T05:01:54.722Z"
+}

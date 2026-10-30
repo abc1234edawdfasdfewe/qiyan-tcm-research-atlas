@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "main_ID_set_matches_previous_catalogue": true,
+  "main_records": 21709,
+  "usable_abstracts": 20865,
+  "keywords": 20882,
+  "body_excerpts": 811,
+  "placeholders": 33,
+  "missing_keywords": 827,
+  "early_records": 18,
+  "supplement_records": 73,
+  "all_details_matched": true,
+  "unique_ids": 21800,
+  "sample_raw_summary_matches_single_ID_api_response": true,
+  "sample_plain_abstract_preserves_source_text": true,
+  "csv_roundtrip_rows": 21709
+}

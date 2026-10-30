@@ -1,0 +1,427 @@
+{
+  "name": "岐研 · 中医药热点计量工作台",
+  "version": "2.0",
+  "created": "2026-10-30",
+  "repository": "abc1234edawdfasdfewe/qiyan-tcm-research-atlas",
+  "entry": "启动AI工作台.command",
+  "local_url": "http://127.0.0.1:8771/#ai",
+  "generated_entry": "中医药热点计量工作台.html",
+  "generated_entry_tracked": false,
+  "ai": {
+    "model": "gemini-4-argon-high",
+    "credential_storage": "macOS Keychain / runtime memory",
+    "credentials_in_repository": false
+  },
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 219,
+      "sha256": "dbc4bdb80a34cc9b2b22eedd1e2f33f7efeef0d84847bfc4cbbbc6d4a206caaa"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 968,
+      "sha256": "eaba506aca80a49c4da488fe2c47ad5f9a5f67e9dbc3c34525143815e913ce13"
+    },
+    {
+      "path": "AI使用说明.md",
+      "bytes": 7975,
+      "sha256": "9bbff8d03e8c39daae636c6ed2a349be95f6ae7d5b32a6e758af8ff3d746dbf3"
+    },
+    {
+      "path": "AI浏览器验收.json",
+      "bytes": 1534,
+      "sha256": "b427095b29d79c121ce1389d762cc71008caf529a1e79ef72bbf8c907ffa4eb2"
+    },
+    {
+      "path": "AI界面预览.png",
+      "bytes": 201597,
+      "sha256": "2f6f5e7fd4f12ccbfd305bcc9ef4730a6cba381cb72aae96d4e9c5d9a2798298"
+    },
+    {
+      "path": "AI示例/01_检索方案.json",
+      "bytes": 461334,
+      "sha256": "a737102d41905f7525dbbbbc2ea64e8fb1618fc2eccb5d8a9881672cacdaa587"
+    },
+    {
+      "path": "AI示例/02_结果解读.json",
+      "bytes": 39738,
+      "sha256": "5972a05cbed02b734546a8500e2c3108360a15c884c50819f754bb0fde708f1f"
+    },
+    {
+      "path": "AI示例/02_结果解读.md",
+      "bytes": 9108,
+      "sha256": "71448aa95b938707750acee0a02216239701c758096bf67e17f60e9f1c3703d8"
+    },
+    {
+      "path": "AI示例/03_直接相关文献.csv",
+      "bytes": 6578,
+      "sha256": "c0c20321b5f419d93916bf1fe630c868c26b57d781b748a96305b979a1a7c041"
+    },
+    {
+      "path": "AI示例/03_相关性精筛.csv",
+      "bytes": 6218,
+      "sha256": "259d9f892b8ac0ab516d18bdc020f9edaf8789d331e5dc51cc5e725dcf5afd93"
+    },
+    {
+      "path": "AI示例/03_相关性精筛.json",
+      "bytes": 39386,
+      "sha256": "00e92f575b8eeed3be2c00d3756d5692f1aee6e2e039753b4dcd3becbb7b83c2"
+    },
+    {
+      "path": "AI离线核验.json",
+      "bytes": 686,
+      "sha256": "c5202abe064f43e2ac68d2b6eed182584632638b3d001f780125ed452434d513"
+    },
+    {
+      "path": "GitHub上传校验.json",
+      "bytes": 456,
+      "sha256": "ba35b3b1452ebc5967f6893b6815b0f1b317b95190856cbacfa531af58d24988"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4706,
+      "sha256": "d9d84687dc0128ae9ac6d8c3fc431b6b41551f6baebe277e76c75fb8288c7ca8"
+    },
+    {
+      "path": "ai-panel.html",
+      "bytes": 5537,
+      "sha256": "7a1b28adc2418d865479f10694bc84c3f47e5dddbfab0d1ba9cebe538cf52e5d"
+    },
+    {
+      "path": "ai.css",
+      "bytes": 10317,
+      "sha256": "05d456ceee868152ece2632002f806f6f68cfa4248373be6280677c905bfa34d"
+    },
+    {
+      "path": "ai.js",
+      "bytes": 21655,
+      "sha256": "259ee27b898ed285b39597be5de190fba4113625b4294e75665e101dd0f20b83"
+    },
+    {
+      "path": "ai_server.py",
+      "bytes": 30064,
+      "sha256": "6800cfeb661011e344655df1aef04431d9ea2a658cc733199830ed12123e1740"
+    },
+    {
+      "path": "app.js",
+      "bytes": 28871,
+      "sha256": "148662ca4ec663786548f2551d9cc1315ef17e46e1d9ae1401d85220e5fbbdcd"
+    },
+    {
+      "path": "build.py",
+      "bytes": 8502,
+      "sha256": "10ff4060e3ba0615b461b8a6411541b56b42dd2e32dc832d35eb60dd5f10b606"
+    },
+    {
+      "path": "collectors/README.md",
+      "bytes": 2365,
+      "sha256": "5bd8ff82ce781b3501434ff9b8c7e2ad380a6b1aaf0fd93305344599716b55bc"
+    },
+    {
+      "path": "collectors/catalogue/assemble_results.py",
+      "bytes": 14658,
+      "sha256": "49ad3363f21538bf9f3c333e60627bc830d7e8ba17314378c1ecef7280767155"
+    },
+    {
+      "path": "collectors/catalogue/batch_collect.py",
+      "bytes": 11202,
+      "sha256": "22e6ee9a5a8b88562d9dd73ed99d6f15f14f36446c8d52df8ce5d49d59bc79c7"
+    },
+    {
+      "path": "collectors/catalogue/cnki_catalog.py",
+      "bytes": 16346,
+      "sha256": "cb588a0b25f4fbfbf3d19a3cdd0afe0ee87f3db085cf52fba09371442dabb0b9"
+    },
+    {
+      "path": "collectors/catalogue/yiigle_collect.mjs",
+      "bytes": 2425,
+      "sha256": "dc087ed737c80bb6e5856301c011aaee61df7fcb2f627bde5cc8191999e68a63"
+    },
+    {
+      "path": "collectors/enrichment/build_results.py",
+      "bytes": 14451,
+      "sha256": "b6738c98d79fc7cb464cac0543532632d4d7ed045a2a4efb8bc8a0ef09c5b1c8"
+    },
+    {
+      "path": "collectors/enrichment/cnki_client.py",
+      "bytes": 16346,
+      "sha256": "cb588a0b25f4fbfbf3d19a3cdd0afe0ee87f3db085cf52fba09371442dabb0b9"
+    },
+    {
+      "path": "collectors/enrichment/enrich_cnki.py",
+      "bytes": 9046,
+      "sha256": "b9db642da975f3912ef7633d7747fc171441701650963b8d392c06738694b151"
+    },
+    {
+      "path": "collectors/enrichment/enrich_publisher.py",
+      "bytes": 10448,
+      "sha256": "bd83aff69e404dc0968fdf3bf4d2f5b1b6e4fe697a7ca36448959367967b2c71"
+    },
+    {
+      "path": "data/corpus.json.gz",
+      "bytes": 14516952,
+      "sha256": "a17390fa0a6b093e78447d4feb42efc3e5d9a2c83de734e39ccaaa9032452f85"
+    },
+    {
+      "path": "datasets/README.md",
+      "bytes": 2573,
+      "sha256": "fcccacfb6380e91169429f209a133ad460d00707d753aa1c1c25c729770a3802"
+    },
+    {
+      "path": "datasets/catalogue/全部已出版目录.csv",
+      "bytes": 8451831,
+      "sha256": "28ffa747e672af9e8eb7f52eff7ad4f79479f0c39aae8e1b0a474735fed2775a"
+    },
+    {
+      "path": "datasets/catalogue/刊名映射.json",
+      "bytes": 7202,
+      "sha256": "02a4293216083d85f22150823f81ca5cc5af0a55417d7cde2fd438bee467b32f"
+    },
+    {
+      "path": "datasets/catalogue/原始刊名清单.txt",
+      "bytes": 1901,
+      "sha256": "1969e4e5f7ed2883c69faa240c8b49cdc953636810c777ed6befee8e00f3f289"
+    },
+    {
+      "path": "datasets/catalogue/原始清单去重映射.csv",
+      "bytes": 4744,
+      "sha256": "590c855670d48f05f866d8dee10b7af467dc398a4d60bb41a61b4150f5feb986"
+    },
+    {
+      "path": "datasets/catalogue/增刊_月份未核验.csv",
+      "bytes": 31440,
+      "sha256": "6589d9595805a77eec8e105d500595a19ce1515155595ee503c247353067ea4f"
+    },
+    {
+      "path": "datasets/catalogue/官网补采/202511.json",
+      "bytes": 11824,
+      "sha256": "499d6c2b8f0312fa71cbf79b1dc0e26de6bdc1f57983188da4dd18b7b86f6cbc"
+    },
+    {
+      "path": "datasets/catalogue/官网补采/202512.json",
+      "bytes": 11824,
+      "sha256": "fd4d0b2fa8956cff61a39822dec01a83b6144439e9fc5a99e0264ca1a80f4739"
+    },
+    {
+      "path": "datasets/catalogue/官网补采/202601.json",
+      "bytes": 9915,
+      "sha256": "653f1d28abc81ef3a6c4cf728c66d2234c9b1c21d20a876e6eaae8d80bfe54e1"
+    },
+    {
+      "path": "datasets/catalogue/官网补采/202602.json",
+      "bytes": 9387,
+      "sha256": "d2320264bd6966597c8af31b33846b6a6d587dd432eb4ddf2231d24f244c0585"
+    },
+    {
+      "path": "datasets/catalogue/官网补采/202603.json",
+      "bytes": 9293,
+      "sha256": "abbe23c31ef902150b6eed7ea20f4e88aa9039c175a3e6268682a8e3ddaea7b1"
+    },
+    {
+      "path": "datasets/catalogue/官网补采/202604.json",
+      "bytes": 9502,
+      "sha256": "32acb7597fd39df8825915cce18931beb125b6134a86c7f6fa765dcb1d2fd65c"
+    },
+    {
+      "path": "datasets/catalogue/官网补采/202605.json",
+      "bytes": 9835,
+      "sha256": "c97cbe7868828c60448a334f20579aad2f936ff09a6a2fd3c08da3fa12ff77bf"
+    },
+    {
+      "path": "datasets/catalogue/官网补采/202606.json",
+      "bytes": 9589,
+      "sha256": "2b0d16d9cd24079ce1c069044682e227c4a764778e8d0b98e9ad8cdeef5c25ba"
+    },
+    {
+      "path": "datasets/catalogue/官网补采/202607.json",
+      "bytes": 9586,
+      "sha256": "3db550738dffec8b06451ddd10a664089b9588af4bc88a1a843ff756b3c80624"
+    },
+    {
+      "path": "datasets/catalogue/官网补采/202608.json",
+      "bytes": 9791,
+      "sha256": "8ea1ee177dfd214a8ddbdc5255d771138147b79435e06023e9bade66638008db"
+    },
+    {
+      "path": "datasets/catalogue/官网补采/202609.json",
+      "bytes": 8756,
+      "sha256": "fcd4d1d2a2c6bb651180a9cca3f4ce7525efee732bf1c74e9f7080993a0184fe"
+    },
+    {
+      "path": "datasets/catalogue/官网补采/202610.json",
+      "bytes": 8946,
+      "sha256": "04df09ca60571b7e331a2ca54fc5f341f3f7bfe7ed975d98eb3bc11dc731cd74"
+    },
+    {
+      "path": "datasets/catalogue/提前上线目录.csv",
+      "bytes": 7747,
+      "sha256": "170b8690641b9ade8763bb2c0a023d0e5d7097c6a70131be78da4cc8866ffc0f"
+    },
+    {
+      "path": "datasets/catalogue/最终数据核验.json",
+      "bytes": 307,
+      "sha256": "1a9d515bb4a95936ded01a6c114c4b53b819fce4efd466375fa8555b10e36678"
+    },
+    {
+      "path": "datasets/catalogue/结果摘要.json",
+      "bytes": 511,
+      "sha256": "cab3662a4e0171a21651c384b09501c4f9718bef6ad3e0a0fcb804e89834a33b"
+    },
+    {
+      "path": "datasets/catalogue/逐期覆盖状态.json",
+      "bytes": 255100,
+      "sha256": "d608191cd05c8192b9b2ec24c27f10edd38d10a5c17d5d6c3f717515ca44727c"
+    },
+    {
+      "path": "datasets/catalogue/采集覆盖情况.csv",
+      "bytes": 6693,
+      "sha256": "f743b12b86d9229450504644f75cf4260559c6ab3c29cabfccda1b902d0840b8"
+    },
+    {
+      "path": "datasets/catalogue/采集计划.json",
+      "bytes": 484185,
+      "sha256": "5c51e69d583702df1f75575d82d2653e46e607553aebe6e76c3245be86b2d58d"
+    },
+    {
+      "path": "datasets/enriched/全部文献详情.json.gz",
+      "bytes": 16065210,
+      "sha256": "e28129bf6bbbe4e806f741f57d5f2744494ad88d0b1ce14e2e50d15e87f635cc"
+    },
+    {
+      "path": "datasets/enriched/各刊字段覆盖情况.csv",
+      "bytes": 4245,
+      "sha256": "f88ddc181caea5f9738424198232f0e1d3c871244dd506bf17b46b8c6827537d"
+    },
+    {
+      "path": "datasets/enriched/字段缺失清单.csv",
+      "bytes": 133416,
+      "sha256": "04d082b4c60af6768ac626b4678d9c3f8fe9e4e794cb728d4d7720c0bb02ab1a"
+    },
+    {
+      "path": "datasets/enriched/最终校验.json",
+      "bytes": 470,
+      "sha256": "6bc726f386b834cfee66f8d9e7b8ccdf4dbc05999a82557da113591df1089154"
+    },
+    {
+      "path": "datasets/enriched/结果摘要.json",
+      "bytes": 2054,
+      "sha256": "9ad1049a5b4fb3dd7cac59837357e6b5baaf1485c8585cd509034e1e08e5aef1"
+    },
+    {
+      "path": "datasets/manifest.json",
+      "bytes": 5027,
+      "sha256": "7438cd21a2d189143140308ef25512f34efb81c1429f24e720a5038ec57e09a4"
+    },
+    {
+      "path": "engine.js",
+      "bytes": 9603,
+      "sha256": "49c1dfd32e825f6853112e177b9b6504667525975ddccb686f529bfadcb713a1"
+    },
+    {
+      "path": "index.template.html",
+      "bytes": 9111,
+      "sha256": "1a569cbbd04da9e01275c5e177382d712eff315e982e953bb66fbb9d259c6321"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 13501,
+      "sha256": "96f66724f1fe30f1f926afa0d43b4a240c6ad17dc9acb8ccd90c89a764b74453"
+    },
+    {
+      "path": "terminology.json",
+      "bytes": 2986,
+      "sha256": "a1bbd2531165ea629cf66f2ca28007c657dac679e50a631d883357134a4e2f82"
+    },
+    {
+      "path": "verify_ai.py",
+      "bytes": 6146,
+      "sha256": "8b3b52fc32a48a35795e55ff12a778a9b968587dd1724e02689f6ed4aadcd23a"
+    },
+    {
+      "path": "verify_datasets.py",
+      "bytes": 1576,
+      "sha256": "68c1bfd8201a8a3d16e516681c64cb31f9209e79f0e4c09fb0b407d47419da7a"
+    },
+    {
+      "path": "verify_engine.cjs",
+      "bytes": 4128,
+      "sha256": "d4989be492accc68da5eb341463c66a702cc1c39bf20b74e1de160668c09d33f"
+    },
+    {
+      "path": "verify_local_service.py",
+      "bytes": 2480,
+      "sha256": "60e69f6198876ee0352efe9aacb8dd9f3ce87395a6029ec04ccc1f7e364706d4"
+    },
+    {
+      "path": "使用说明.md",
+      "bytes": 9460,
+      "sha256": "f01628577b680955d0ab512ce39a0fa2bc18b848800bb910111ff8448e48e740"
+    },
+    {
+      "path": "停止AI服务.command",
+      "bytes": 1062,
+      "sha256": "3687e9294ffde35d121aebe4833e8b70f9bd00b578cde4ed88d15e3da8e151d2"
+    },
+    {
+      "path": "全库热点基线.csv",
+      "bytes": 1961151,
+      "sha256": "eefd72635756721a29855572d4d733b4d3681e97b49b67f90d682668e101f0f0"
+    },
+    {
+      "path": "关键词归一词表.csv",
+      "bytes": 2291660,
+      "sha256": "9c287c93e5489575fd2cf1cb7b74ea679f96a64024154547d351b8f740d0981c"
+    },
+    {
+      "path": "分析示例.json",
+      "bytes": 240856,
+      "sha256": "8fd0e783432150497fdb5a7074479146a2b44e6b740db47d8894fc7a21575778"
+    },
+    {
+      "path": "启停核验.json",
+      "bytes": 189,
+      "sha256": "32fc6584b12fa8bd21c47b4c9e9c8246a43290ee78d84966dc0506c25e342055"
+    },
+    {
+      "path": "启动AI工作台.command",
+      "bytes": 2111,
+      "sha256": "fc4393d45346bd05d43500b2b9e90671124c8e4191ce08c8b2272a9591eb0745"
+    },
+    {
+      "path": "引擎核验.json",
+      "bytes": 1478,
+      "sha256": "ee6af3e255b01eeb2a57766eafd84ecd2db691aeefaa32a4a7779bce73febbe0"
+    },
+    {
+      "path": "数据质量与去重.json",
+      "bytes": 8405,
+      "sha256": "8c892bcf1cbb5e9aeebb260adb46b96205f8b36bfcc4a168db3560b4d3d6e9af"
+    },
+    {
+      "path": "期刊覆盖情况.csv",
+      "bytes": 6693,
+      "sha256": "f743b12b86d9229450504644f75cf4260559c6ab3c29cabfccda1b902d0840b8"
+    },
+    {
+      "path": "本地服务边界核验.json",
+      "bytes": 905,
+      "sha256": "c89b8b6484ad383d070ffbd507a5bd0da1c7bea26bbf59c79489f151f1565110"
+    },
+    {
+      "path": "浏览器验收.json",
+      "bytes": 1656,
+      "sha256": "177babe5f8da3ef2b21abfea55924513e6d55e232193f4563a7a29201f564deb"
+    },
+    {
+      "path": "生成分析示例.cjs",
+      "bytes": 2188,
+      "sha256": "1c4b931529676962ab31de45f6f20cea3ec2dd99d890f037a58a15728b081668"
+    },
+    {
+      "path": "界面预览.png",
+      "bytes": 93125,
+      "sha256": "795f44daf711a6a1d787cd2bb90f9dda467e73ff585a3bcb7924bc2e1f86f186"
+    }
+  ]
+}

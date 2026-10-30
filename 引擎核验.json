@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "entire catalogue preserves 21709 record IDs",
+      "passed": true
+    },
+    {
+      "name": "iron-death literal topic matches independent Python count 430",
+      "passed": true
+    },
+    {
+      "name": "exact keyword search matches 303 documents",
+      "passed": true
+    },
+    {
+      "name": "AND topic matches independent Python count 14",
+      "passed": true
+    },
+    {
+      "name": "implicit AND equals explicit AND",
+      "passed": true
+    },
+    {
+      "name": "boolean precedence, parentheses and NOT follow set operations",
+      "passed": true
+    },
+    {
+      "name": "malformed queries fail without returning fake empty results",
+      "passed": true
+    },
+    {
+      "name": "conservative duplicate toggle removes exactly 23 records",
+      "passed": true
+    },
+    {
+      "name": "trend complete cohort has 43 journals and counts sum correctly",
+      "passed": true
+    },
+    {
+      "name": "network edge counts and cosine match direct set counts",
+      "passed": true
+    },
+    {
+      "name": "entity matrix cells reproduce direct document membership",
+      "passed": true
+    },
+    {
+      "name": "zero-match, one-record and incomplete-journal filters stay valid",
+      "passed": true
+    }
+  ],
+  "defaults": {
+    "base": 21686,
+    "hits": 21686,
+    "withAbstract": 20842,
+    "withKeywords": 20859,
+    "journals": 67,
+    "removedDuplicates": 23,
+    "suspects": 26
+  }
+}
