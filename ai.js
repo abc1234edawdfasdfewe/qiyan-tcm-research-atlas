@@ -41,7 +41,7 @@
       if(!response.ok)throw new Error('status');const value=await response.json();if(value.version!=='2.0')throw new Error('version');connection=value;
       $('aiConnectionText').textContent=value.configured?'模型已配置 · 按需调用':'模型待配置';$('aiSettings').classList.toggle('ready',value.configured);
       $('aiEndpoint').value=value.endpoint;$('aiModel').value=value.model;$('aiCredentialState').textContent=value.configured?`密钥已配置 · 保存位置：${value.storage}。页面不读取或显示密钥。`:'尚未配置密钥。';
-      $('aiLocalNotice').hidden=true;updateScope();
+      $('aiLocalNotice').hidden=true;updateScope();window.dispatchEvent(new Event('atlas:connection'));
     }catch(error){connection=null;$('aiConnectionText').textContent='本地 AI 服务未连接';$('aiLocalNotice').hidden=false;$('aiRun').disabled=true;$('aiCredentialState').textContent='请启动交付包中的“启动AI工作台.command”，再刷新服务版页面。';}
   }
   async function post(path,data,signal,retry=true){
@@ -140,5 +140,6 @@
   });
   window.addEventListener('atlas:results',()=>{updateScope();if(records[mode])renderReport();});
   window.atlasAiDebug={mode:()=>mode,report:()=>records[mode]||null,configured:()=>!!connection?.configured,isBusy:()=>busy};
+  window.atlasAIClient={post,status:()=>({configured:!!connection?.configured,offline:location.protocol==='file:',model:connection?.model}),settings:()=>$('aiSettingsDialog').showModal()};
   $('aiQuestion').value=questions.plan;switchMode(initialMode);updateScope();handshake();
 })();

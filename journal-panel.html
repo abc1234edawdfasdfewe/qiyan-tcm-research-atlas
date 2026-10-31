@@ -1,0 +1,31 @@
+<section class="panel jf" id="journal-fit" aria-labelledby="jfHeading">
+  <div class="jf-heading"><div><div class="eyebrow">JOURNAL FINDER · EVIDENCE BEFORE ADVICE</div><h2 id="jfHeading">为这篇稿件，找到合适的期刊<span>。</span></h2><p>从近一年实际发文题材出发，比较研究对象、方法与近题论文。</p></div><span class="jf-local">01 本地匹配 → 02 回查证据 → 03 AI 策略</span></div>
+  <div class="jf-inputgrid"><form id="jfForm">
+    <div class="jf-formhead"><h3>01 / 稿件画像</h3><label class="jf-file">导入 DOCX<input id="jfFile" type="file" accept=".docx" aria-label="导入稿件 DOCX"></label></div>
+    <label for="jfTitle">稿件题目</label><input id="jfTitle" maxlength="300" placeholder="输入待投稿论文的题目" autocomplete="off">
+    <label for="jfAbstract">摘要 <small>补充研究对象、方法和主要结果，匹配更有依据</small></label><textarea id="jfAbstract" rows="6" maxlength="12000" placeholder="粘贴摘要；无需上传完整正文"></textarea>
+    <label for="jfKeywords">关键词</label><input id="jfKeywords" maxlength="1200" placeholder="用分号分隔，例如：古籍；实体识别；检索增强">
+    <div class="jf-selectrow"><label>匹配侧重<select id="jfPriority"><option value="balanced">对象与方法均衡</option><option value="method">优先研究方法</option><option value="subject">优先研究对象</option></select></label><label>稿件类型<select id="jfType"><option value="original">原始研究 / 方法研究</option><option value="review">综述 / 述评</option><option value="any">暂不区分</option></select></label></div>
+    <label for="jfFocus">最希望突出什么？ <small>可选，用分号分隔</small></label><input id="jfFocus" maxlength="1000" placeholder="例如：实体关系抽取；古籍知识组织">
+    <div class="jf-formactions"><button id="jfRun" class="primary" type="submit">匹配 67 本期刊 ↗</button><button type="button" id="jfExample" class="quiet">体验示例</button><button type="button" id="jfClear" class="quiet">清空稿件</button></div>
+    <p class="footnote">稿件字段仅保存在当前页面内存，刷新后清空。DOCX 在本机解析，仅提取题目、中文摘要和关键词，导入后请核对。</p>
+    <div id="jfImportNote" class="jf-info" role="status" hidden></div><div id="jfError" class="error" role="alert" hidden></div>
+  </form><aside class="jf-guide" id="jfGuide"><div class="jf-guideicon">刊</div><div class="eyebrow">YOUR MANUSCRIPT × RECENT PUBLICATIONS</div><h3>刊名只是起点，<br>近题论文才是依据。</h3><p>一次比较全库 67 刊。先看题材与方法是否相近，再核对每刊的原始论文和摘要。</p><div class="jf-guidestats"><div><strong>67</strong><span>本候选期刊</span></div><div><strong>1 年</strong><span>正式刊期窗口</span></div><div><strong>可回查</strong><span>题录 · 摘要 · 来源</span></div></div><p id="jfCorpusNote" class="footnote">正在载入本地语料…</p><details><summary>匹配分如何计算？</summary><p>依据词项稀有度、题名/关键词与摘要匹配、研究方法和对象概念计算论文近邻，再综合每刊前三篇、最佳近邻与近题数量。大刊的发文数量不会直接变成高分。实体知识图谱与计量图谱分别识别，疑似综述按稿件类型调整权重。</p><p>这是本批样本内的题材排序，不是录用概率或期刊质量排名。栏目适配、最新稿约、费用、审稿周期及核心目录需另行核实。</p></details></aside></div>
+  <div id="jfProgress" class="jf-info" role="status" hidden>正在本地比较稿件与各刊论文… 首次计算可能需要数秒。</div>
+  <div id="jfResults" hidden>
+    <div class="jf-resulthead"><div><h3>02 / 从近题证据比较期刊</h3><p id="jfSummary"></p></div><div class="actions"><button id="jfExportMd">选刊报告 MD ↓</button><button id="jfExportJson">完整结果 JSON ↓</button></div></div>
+    <div id="jfStale" class="jf-warning" hidden>稿件字段或偏好已改变，请重新匹配。下方保留的是上一次结果。</div><div id="jfFeatures" class="jf-tags"></div>
+    <div class="jf-filterrow"><label>查找候选刊<input id="jfJournalSearch" type="search" placeholder="输入刊名"></label><label class="check"><input id="jfComplete" type="checkbox">只显示计划刊期收录完整的期刊</label><span id="jfVisibleCount"></span></div>
+    <div id="jfTop" class="jf-top"></div>
+    <div class="jf-evidencegrid"><div class="jf-ranking"><div class="jf-rankinghead"><b>候选期刊比较</b><span>分值仅在同一次匹配中比较</span></div><div class="jf-tablewrap"><table><thead><tr><th>期刊</th><th>匹配分</th><th>近题 / 样本</th><th>刊期收录</th></tr></thead><tbody id="jfTable"></tbody></table></div></div><article id="jfDetail" class="jf-detail" aria-live="polite"></article></div>
+    <p class="footnote">近题数按本地启发式阈值计算，不是相关论文穷尽计数。通知等疑似非研究记录已排除；研究类型按题名初判。缺期可能影响排序，收录完整也不代表已核实出版社全部文章。导出文件包含本轮稿件字段。</p>
+    <div class="jf-ai"><div class="jf-resulthead"><div><div class="eyebrow">OPTIONAL AI REVIEW</div><h3>03 / 把匹配结果转为投稿策略</h3><p>AI 比较当前列表前六刊，每刊最多三篇近题摘要，提出适配理由、风险与修改方向。</p></div><button id="jfSettings" class="quiet">模型连接 ↗</button></div>
+      <p id="jfSendScope" class="jf-info"></p><details class="jf-preview"><summary>预览将发送的稿件字段</summary><pre id="jfSendPreview"></pre></details>
+      <label class="jf-consent"><input id="jfConsent" type="checkbox">同意将上方预览的稿件字段与所列候选论文摘要发送至已配置模型。完整 DOCX 不发送。</label>
+      <div class="jf-formactions"><button id="jfAiRun" class="primary" disabled>生成 AI 投稿策略 ✦</button><button id="jfAiStop" hidden>停止等待</button><button id="jfAiExport" disabled>AI 策略 MD ↓</button></div>
+      <p class="footnote">使用现有模型连接。当前服务通过 HTTP 传输；未公开稿件可先仅用本地匹配。AI 结果为摘要层面的建议，不能代替编辑判断。</p>
+      <div id="jfAiStale" class="jf-warning" hidden>稿件或候选列表已改变，以下 AI 策略对应先前范围，请重新分析。</div><div id="jfAiStatus" role="status" class="jf-info" hidden></div><div id="jfAiError" role="alert" class="error" hidden></div><div id="jfAiOutput"></div>
+    </div>
+  </div>
+</section>
+<dialog id="jfPaperDialog"><div class="dialoghead"><h2>近题论文依据</h2><button id="jfPaperClose">关闭 ×</button></div><div id="jfPaperBody"></div></dialog>

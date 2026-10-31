@@ -1,10 +1,10 @@
 {
   "name": "岐研 · 中医药热点计量工作台",
-  "version": "2.0",
+  "version": "2.1",
   "created": "2026-10-30",
   "repository": "abc1234edawdfasdfewe/qiyan-tcm-research-atlas",
   "entry": "启动AI工作台.command",
-  "local_url": "http://127.0.0.1:8771/#ai",
+  "local_url": "http://127.0.0.1:8771/#journal-fit",
   "generated_entry": "中医药热点计量工作台.html",
   "generated_entry_tracked": false,
   "ai": {
@@ -80,8 +80,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4706,
-      "sha256": "d9d84687dc0128ae9ac6d8c3fc431b6b41551f6baebe277e76c75fb8288c7ca8"
+      "bytes": 6292,
+      "sha256": "de83a2740f0a60a1dbb23f17b5e153bee2af92e0e2da79e7c629924578a49f3a"
     },
     {
       "path": "ai-panel.html",
@@ -95,13 +95,13 @@
     },
     {
       "path": "ai.js",
-      "bytes": 21655,
-      "sha256": "259ee27b898ed285b39597be5de190fba4113625b4294e75665e101dd0f20b83"
+      "bytes": 21896,
+      "sha256": "003e016e6d323833dfb76dc36631dc7219a5608474bee1d0061a8c8075390a2b"
     },
     {
       "path": "ai_server.py",
-      "bytes": 30064,
-      "sha256": "6800cfeb661011e344655df1aef04431d9ea2a658cc733199830ed12123e1740"
+      "bytes": 31485,
+      "sha256": "b190243979f7e898fbbf5b7faae97180a1fb51ff19b1af08db50b6030587e967"
     },
     {
       "path": "app.js",
@@ -110,8 +110,8 @@
     },
     {
       "path": "build.py",
-      "bytes": 8502,
-      "sha256": "10ff4060e3ba0615b461b8a6411541b56b42dd2e32dc832d35eb60dd5f10b606"
+      "bytes": 8821,
+      "sha256": "19eabcca67034930212162204e7a544ac79481ea2aa86d6d3d5a9e635edf6e3c"
     },
     {
       "path": "collectors/README.md",
@@ -320,8 +320,33 @@
     },
     {
       "path": "index.template.html",
-      "bytes": 9111,
-      "sha256": "1a569cbbd04da9e01275c5e177382d712eff315e982e953bb66fbb9d259c6321"
+      "bytes": 9280,
+      "sha256": "8a8e75517c55bfa8657421680e44be7523e110e1dec377db059d1afab0ca8d33"
+    },
+    {
+      "path": "journal-engine.js",
+      "bytes": 9129,
+      "sha256": "05c9d6b989dce4dff67118ceb71f855193c5f3ccce457ea51470a84eac8ea4c2"
+    },
+    {
+      "path": "journal-panel.html",
+      "bytes": 6887,
+      "sha256": "34352be98ac4f9fcd851b77c133c88fea94604fcdeafaf6e0d3ddba353ef1bcd"
+    },
+    {
+      "path": "journal.css",
+      "bytes": 6824,
+      "sha256": "f36d99a03bb137752441cb448c26083e5a46b82a740267e7cd75ca7e1aa151fc"
+    },
+    {
+      "path": "journal.js",
+      "bytes": 18050,
+      "sha256": "9f66c46213723b3091816d46e26e3730a2cae1f18cd3b93c10b8ff2babda9e74"
+    },
+    {
+      "path": "journal_service.py",
+      "bytes": 9631,
+      "sha256": "9107607f928d0b7c3fa5f0a1783e6fd03dffd2e6f4d827beedb0d3328e37b508"
     },
     {
       "path": "styles.css",
@@ -347,6 +372,16 @@
       "path": "verify_engine.cjs",
       "bytes": 4128,
       "sha256": "d4989be492accc68da5eb341463c66a702cc1c39bf20b74e1de160668c09d33f"
+    },
+    {
+      "path": "verify_journal.cjs",
+      "bytes": 2860,
+      "sha256": "6bd40f81398bd56c960aa598bee4a4284f070d74d0579b6f7a155263a2343784"
+    },
+    {
+      "path": "verify_journal_service.py",
+      "bytes": 4809,
+      "sha256": "e820f1464c8abbf01f0c77a79b15a2cd6ff1ae62516aa39b928af9ac4cd5e1dc"
     },
     {
       "path": "verify_local_service.py",
@@ -422,6 +457,44 @@
       "path": "界面预览.png",
       "bytes": 93125,
       "sha256": "795f44daf711a6a1d787cd2bb90f9dda467e73ff585a3bcb7924bc2e1f86f186"
+    },
+    {
+      "path": "选刊上传校验.json",
+      "bytes": 192,
+      "sha256": "b384af03be42d857b3dfe3e89d4a2d11247a208d241cedf3911aed84499b1cbb"
+    },
+    {
+      "path": "选刊助手说明.md",
+      "bytes": 4534,
+      "sha256": "8c9a9145ec7312c8dd7cb037ed4198651bdf926ad83ca1b994988af8c49964dd"
+    },
+    {
+      "path": "选刊引擎核验.json",
+      "bytes": 787,
+      "sha256": "f4deec541891d90ae04612e0481463455a31bbd7c0e27f47c504f83e7f82758e"
+    },
+    {
+      "path": "选刊服务核验.json",
+      "bytes": 58,
+      "sha256": "74dff66b6b203c521195202bbea931fd32f993d37a7afeea4bfa27ca2d3610d8"
+    },
+    {
+      "path": "选刊浏览器验收.json",
+      "bytes": 1647,
+      "sha256": "501a054f6c3d8dd05c88f752a4601709d92b6ab33f755bba3acd670f0f1e6cb8"
+    },
+    {
+      "path": "选刊界面预览.png",
+      "bytes": 130807,
+      "sha256": "56566234e914b32abe5c12dfbf955d822e580348171be2f314285f1ca37b043c"
     }
-  ]
+  ],
+  "updated": "2026-10-31",
+  "journal_finder": {
+    "version": "journal-fit-1.0",
+    "local_matching": true,
+    "manuscript_persisted": false,
+    "explicit_ai_consent": true,
+    "max_docx_mb": 20
+  }
 }

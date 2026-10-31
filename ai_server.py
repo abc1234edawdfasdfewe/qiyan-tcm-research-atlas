@@ -20,6 +20,7 @@ import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
+import journal_service
 
 ROOT = Path(__file__).resolve().parent
 ENDPOINT = 'http://141.148.168.28:8317/v1/chat/completions'
@@ -393,18 +394,23 @@ class Handler(http.server.BaseHTTPRequestHandler):
         if not self.trusted_request(require_token=True):
             return
         state = self.server.state
+        path = urllib.parse.urlsplit(self.path).path
         try:
             if self.headers.get('Content-Type', '').split(';')[0] != 'application/json':
                 return self.json_response(415, {'error': '需要 JSON 请求。'})
             size = int(self.headers.get('Content-Length', '0'))
-            if not 0 < size <= MAX_BODY:
+            if not 0 < size <= (journal_service.MAX_DOCX_BASE64 + 2000 if path == '/api/manuscript' else MAX_BODY):
                 return self.json_response(413, {'error': '请求大小超出范围。'})
             payload = json.loads(self.rfile.read(size))
             if not isinstance(payload, dict):
                 raise ValueError('请求格式无效。')
         except (ValueError, TypeError):
             return self.json_response(400, {'error': '请求 JSON 不合法。'})
-        path = urllib.parse.urlsplit(self.path).path
+        if path == '/api/manuscript':
+            try:
+                return self.json_response(200, journal_service.import_docx(payload))
+            except (ValueError, TypeError, OSError):
+                return self.json_response(422, {'error': '无法导入；请选择不超过 20 MB 的有效 DOCX，或直接粘贴题目、摘要与关键词。'})
         if path == '/api/shutdown':
             self.json_response(200, {'stopping': True})
             threading.Thread(target=self.server.shutdown, daemon=True).start()
@@ -415,7 +421,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
                 return self.json_response(200, {'configured': True, 'storage': state.storage, 'warning': warning})
             except ValueError as e:
                 return self.json_response(400, {'error': str(e)})
-        if path not in ('/api/ai', '/api/test'):
+        if path not in ('/api/ai', '/api/test', '/api/journal-ai'):
             return self.json_response(404, {'error': '没有此接口。'})
         if not state.key:
             return self.json_response(503, {'error': '请先在“模型连接”中配置密钥。'})
@@ -426,6 +432,14 @@ class Handler(http.server.BaseHTTPRequestHandler):
             if path == '/api/test':
                 _, usage = call_provider(state.key, [{'role': 'user', 'content': '请仅回复 OK。'}], max_tokens=512)
                 return self.json_response(200, {'connected': True, 'model': MODEL, 'seconds': round(time.monotonic() - started, 1), 'usage': usage})
+            if path == '/api/journal-ai':
+                ctx, evidence, coverage = journal_service.context(state.corpus, payload)
+                content, usage = call_provider(state.key, [{'role': 'system', 'content': journal_service.PROMPT}, {'role': 'user', 'content': json.dumps(ctx, ensure_ascii=False)}])
+                result, warnings = journal_service.validate(parse_model_json(content), evidence)
+                return self.json_response(200, {'mode': 'journal', 'model': MODEL, 'prompt_version': 'journal-fit-ai-1.0',
+                                                'created_at': dt.datetime.now(dt.timezone.utc).isoformat(), 'seconds': round(time.monotonic() - started, 1),
+                                                'usage': usage, 'coverage': coverage, 'result': result, 'warnings': warnings, 'evidence': evidence,
+                                                'corpus_sha256': state.corpus.data['meta']['corpus_sha256']})
             mode = payload.get('mode')
             ctx, evidence, coverage = state.corpus.context(payload)
             messages = [{'role': 'system', 'content': COMMON_PROMPT + SCHEMAS[mode]}, {'role': 'user', 'content': json.dumps(ctx, ensure_ascii=False)}]

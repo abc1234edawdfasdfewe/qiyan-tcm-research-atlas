@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "provider_calls": 0,
+  "checks": [
+    {
+      "name": "rejects empty manuscript",
+      "passed": true
+    },
+    {
+      "name": "separates bibliometric maps from semantic knowledge graphs",
+      "passed": true
+    },
+    {
+      "name": "returns all 67 candidate journals with real evidence",
+      "passed": true
+    },
+    {
+      "name": "method query retrieves published extraction studies rather than acupuncture name alone",
+      "passed": true
+    },
+    {
+      "name": "ranking deterministic across runs",
+      "passed": true
+    },
+    {
+      "name": "clinical subject search changes the near-neighbor evidence",
+      "passed": true
+    },
+    {
+      "name": "unseen subject does not produce fabricated articles",
+      "passed": true
+    }
+  ]
+}

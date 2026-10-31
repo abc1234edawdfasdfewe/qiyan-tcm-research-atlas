@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-31",
+  "passed": true,
+  "browser": "Ego Lite",
+  "checks": [
+    {
+      "name": "67-journal ranking and canonical evidence table",
+      "passed": true
+    },
+    {
+      "name": "paper dialog shows full usable local abstract and source URL",
+      "passed": true
+    },
+    {
+      "name": "missing-period journal filter and empty-state recovery",
+      "passed": true
+    },
+    {
+      "name": "JSON report download contains all 67 candidates and citations",
+      "passed": true
+    },
+    {
+      "name": "AI strategy Markdown export",
+      "passed": true
+    },
+    {
+      "name": "consent resets and local/AI reports become stale after input change",
+      "passed": true
+    },
+    {
+      "name": "manuscript not stored in localStorage/sessionStorage; reload clears fields",
+      "passed": true
+    },
+    {
+      "name": "390-pixel layout has document width 390",
+      "passed": true
+    },
+    {
+      "name": "DOCX over 4 MB with fullwidth summary labels imports through local service",
+      "passed": true
+    }
+  ],
+  "live_ai_smoke": {
+    "synthetic_manuscript": true,
+    "provider_calls": 1,
+    "journals": 6,
+    "papers": 17,
+    "seconds": 24.9,
+    "valid_journal_citations": true,
+    "validation_warnings": 0
+  },
+  "unpublished_manuscript_sent_to_model": false,
+  "notes": [
+    "WeChat container path could not be read by the browser file API; the same file imported successfully from an ordinary workspace folder. UI now times out and restores controls if browser file reading fails.",
+    "No original manuscript file, text, or manuscript screenshots are included in this repository."
+  ]
+}
